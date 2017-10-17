@@ -2,12 +2,12 @@
 
 
 {% block page_title %}
-Stomach ache symptoms and conditions - NHS.UK
+What happens during a chlamydia test
 {% endblock %}
 
 
 {% block pageTitle %}
-Do you want to [title doesn't flow into the third option below]
+What happens during a chlamydia test
 {% endblock %}
 
 {% block pageIntro %}
@@ -25,24 +25,42 @@ Do you want to [title doesn't flow into the third option below]
 <div class="form-group">
 <fieldset>
   <legend class="strong">
+    <!-- You can:
+    <ul>
+    <li>use a kit to take your own samples - this is usually free for people under 25 years old</li>
+    <li>see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free</li>
+    <li>see your GP - they might refer you to a sexual health expert, and you could be asked to pay a prescription charge if you need treatment</li>
+    </ul> -->
 
+<!-- <h2 class="h3">What happens during a chlamydia test</h2> -->
+
+<p>Samples will be collected from the areas you have symptoms using one or both of the following methods: 
+</p>
+
+<ul>
+<li>swab - a small cotton bud which is wiped over the area with symptoms</li>
+<li>urine (wee) collection</li>
+</ul>
+
+<p>The samples will be sent to a lab for testing.</p>
+<p>If you see a sexual health expert, they'll ask questions about your symptoms and sexual activity to understand what kind of test you need. 
+</p>
+
+    <h3>What would you like to do?</h3>
   </legend>
   <div class="single-choices" data-target="example-progress">
-    <label for="radio-1" class="block-label">
+    <label for="radio-1" class="block-label" style="font-weight:400;">
       <input id="radio-1" type="radio" name="radio-group" value="radio-1"  onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
-      see someone who is a sexual health specialist? 
-      <p class="extra-info">
-        see someone who is a sexual health specialistsee someone who is a sexual health specialist
-      </p>
+      get a test kit - this is usually free for people under 25 years old
     </label>
 
-    <label for="radio-2" class="block-label">
+    <label for="radio-2" class="block-label" style="font-weight:400;">
       <input id="radio-2" type="radio" name="radio-group" value="radio-2" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
-      get a test you can do yourself and send off?
+      see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free
     </label>
-    <label for="radio-3" class="block-label">
+    <label for="radio-3" class="block-label" style="font-weight:400;">
       <input id="radio-3" type="radio" name="radio-group" value="radio-3" onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
-      not bothered
+      view all options
     </label>
 
   </div>
@@ -50,9 +68,12 @@ Do you want to [title doesn't flow into the third option below]
 
 </div>
 
+<p class="info-panel" style="margin-bottom: 48px;">You can see your GP. They might refer you to a sexual health expert. You could be asked to pay a prescription charge if you need treatment.</p>
+
 <input type="submit" class="button" value="Continue">
 
 </form>
+
 
 {% endblock %}
 

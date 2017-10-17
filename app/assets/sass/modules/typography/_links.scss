@@ -1,0 +1,19 @@
+a {
+    color: $link-colour;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $hover-link-colour;
+}
+
+a:visited {
+    color: $visited-link-colour;
+}
+
+a:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 5px $focus-colour;
+  -moz-box-shadow: 0 0 0 5px $focus-colour;
+  box-shadow: 0 0 0 5px $focus-colour;
+}

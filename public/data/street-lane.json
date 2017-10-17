@@ -1,0 +1,652 @@
+[
+  {
+    "code": "B86066",
+    "name": {
+      "value": "The Street Lane Practice",
+      "matches": [
+        [
+          4,
+          14
+        ]
+      ]
+    },
+    "address": {
+      "value": "The Street Lane Practice, 12 Devonshire Avenue, Roundhay, Leeds, LS8 1AY",
+      "matches": [
+        [
+          4,
+          14
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 11,
+      "address": 11,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "M83665",
+    "name": {
+      "value": "R J Mitchell Medical Centre",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "19 Wright Street, Butt Lane, Kidsgrove, Stoke On Trent, ST7 1NY",
+      "matches": [
+        [
+          10,
+          15
+        ],
+        [
+          21,
+          26
+        ],
+        [
+          49,
+          51
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 11,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "A83033",
+    "name": {
+      "value": "Pelton & Fellrose Medical Group",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Unit 1, Lavender Centre, Pelton Lane, Pelton, Chester Le Street, County Durham, DH2 1HS",
+      "matches": [
+        [
+          7,
+          9
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          31,
+          35
+        ],
+        [
+          57,
+          62
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 11,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "B84610",
+    "name": {
+      "value": "Horne Street Surgery",
+      "matches": [
+        [
+          6,
+          12
+        ]
+      ]
+    },
+    "address": {
+      "value": "Horne Street Surgery, Horne Street Health Ctr, Hanson Lane, Halifax, HX1 5UA",
+      "matches": [
+        [
+          6,
+          12
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          53,
+          57
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 7,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "L85029",
+    "name": {
+      "value": "L85029 (Vine Surgery)",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Vine Surgery, Hindhayes Lane, Street, Somerset, BA16 0ET",
+      "matches": [
+        [
+          23,
+          27
+        ],
+        [
+          30,
+          35
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "L85060",
+    "name": {
+      "value": "L85060 (Vine Surgery)",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Vine Surgery, Hindhayes Lane, Street, Somerset, BA16 0ET",
+      "matches": [
+        [
+          23,
+          27
+        ],
+        [
+          30,
+          35
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "P81071",
+    "name": {
+      "value": "The New Hall Lane Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "New Hall Lane Practice, Geoffrey Street, Preston, PR1 5NE",
+      "matches": [
+        [
+          8,
+          12
+        ],
+        [
+          33,
+          38
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "P82660",
+    "name": {
+      "value": "Deane Clinic 1",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Deane Clinic, Horsefield Street,Deane, Bolton, Lancashire, BL3 4LU",
+      "matches": [
+        [
+          2,
+          4
+        ],
+        [
+          25,
+          30
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          46,
+          49
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "P89609",
+    "name": {
+      "value": "Stamford House",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Stamford House, 2 Princess Street, Ashton-Under-Lyne, Lancashire, OL6 9QH",
+      "matches": [
+        [
+          27,
+          32
+        ],
+        [
+          53,
+          56
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "A83009",
+    "name": {
+      "value": "Bridge End Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Bridge End Surgery, Pick Tree Lane, Chester-Le-Street, County Durham, DH3 3SL",
+      "matches": [
+        [
+          25,
+          33
+        ],
+        [
+          47,
+          52
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "M81056",
+    "name": {
+      "value": "The Church Street Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "The Church Street Surgery, Callows Lane, Kidderminster, Worcestershire, DY10 2JG",
+      "matches": [
+        [
+          11,
+          17
+        ],
+        [
+          34,
+          38
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "N81085",
+    "name": {
+      "value": "Park Lane Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Park Lane House Med Ctr, Waters Green Medical Ctr, Sunderland Street, Macclesfield, Cheshire, SK11 6JL",
+      "matches": [
+        [
+          4,
+          8
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          57,
+          59
+        ],
+        [
+          62,
+          67
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 10,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "P92643",
+    "name": {
+      "value": "Das Dn",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "79 Church Street, Leigh, Lancashire, WN7 1AZ",
+      "matches": [
+        [
+          10,
+          15
+        ],
+        [
+          24,
+          27
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "P81064",
+    "name": {
+      "value": "King Street Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "King Street Surgery, 38 King Street, Lancaster, LA1 1RE",
+      "matches": [
+        [
+          5,
+          11
+        ],
+        [
+          29,
+          34
+        ],
+        [
+          36,
+          39
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "Y00437",
+    "name": {
+      "value": "The Orchard Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Willow Parade, 276 High Street, Langley, Berkshire, SL3 8HD",
+      "matches": [
+        [
+          24,
+          29
+        ],
+        [
+          31,
+          34
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "Y02790",
+    "name": {
+      "value": "Bolton Medical Centre",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "21 Rupert Street, Great Lever, Bolton, Lancashire, BL3 6PY",
+      "matches": [
+        [
+          10,
+          15
+        ],
+        [
+          22,
+          24
+        ],
+        [
+          38,
+          41
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "Y03364",
+    "name": {
+      "value": "Great Lever Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "21 Rupert Street, Great Lever, Bolton, Lancashire, BL3 6RN",
+      "matches": [
+        [
+          10,
+          15
+        ],
+        [
+          22,
+          24
+        ],
+        [
+          38,
+          41
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "Y02322",
+    "name": {
+      "value": "Leigh Family Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Bridgewater Mc, Henry Street, Leigh, Lancashire, WN7 2PE",
+      "matches": [
+        [
+          22,
+          27
+        ],
+        [
+          36,
+          39
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "H82091",
+    "name": {
+      "value": "New Pond Row Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "New Pond Row, 35 South Street, Lancing, West Sussex, BN15 8AN",
+      "matches": [
+        [
+          23,
+          28
+        ],
+        [
+          30,
+          33
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "L85033",
+    "name": {
+      "value": "Langport Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Langport Surgery, North Street, Langport, Somerset, TA10 9RH",
+      "matches": [
+        [
+          0,
+          2
+        ],
+        [
+          24,
+          29
+        ],
+        [
+          31,
+          34
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 9,
+      "practitioners": 0
+    }
+  }
+]

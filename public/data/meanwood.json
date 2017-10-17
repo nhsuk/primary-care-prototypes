@@ -1,0 +1,581 @@
+[
+  {
+    "code": "B86059",
+    "name": {
+      "value": "Meanwood Group Practice",
+      "matches": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "address": {
+      "value": "Meanwood Group Practice, 548 Meanwood Road, Leeds, West Yorkshire, LS6 4JN",
+      "matches": [
+        [
+          0,
+          7
+        ],
+        [
+          28,
+          35
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 9,
+      "address": 9,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "F82030",
+    "name": {
+      "value": "Lynwood Medical Centre",
+      "matches": [
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    "address": {
+      "value": "Lynwood Medical Centre, 4 Lynwood Dr, Collier Row, Romford, Essex, RM5 3QL",
+      "matches": [
+        [
+          2,
+          6
+        ],
+        [
+          28,
+          32
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "Y02933",
+    "name": {
+      "value": "Hollinwood Medical Practice",
+      "matches": [
+        [
+          5,
+          9
+        ]
+      ]
+    },
+    "address": {
+      "value": "Hollinwood Med. Practice, 1 Clive Street, Oldham, OL8 3TR",
+      "matches": [
+        [
+          5,
+          9
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "E87026",
+    "name": {
+      "value": "Meanwhile Garden Medical Centre",
+      "matches": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "address": {
+      "value": "Meanwhile Garden Med Ctr, Unit 5, 1-31 Elkstone Road, London, W10 5NT",
+      "matches": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "F81732",
+    "name": {
+      "value": "Swanwood Partnership",
+      "matches": [
+        [
+          2,
+          7
+        ]
+      ]
+    },
+    "address": {
+      "value": "2 Market Avenue, Wickford, Essex, SS12 0AG",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 0,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "C82041",
+    "name": {
+      "value": "Charnwood Medical Group",
+      "matches": [
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    "address": {
+      "value": "Rosebery Health Centre, Rosebery Street, Loughborough, Leicestershire, LE11 5DX",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 0,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "A83626",
+    "name": {
+      "value": "Evenwood Medical Practice",
+      "matches": [
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    "address": {
+      "value": "Copeland Lane, Evenwood, Bishop Auckland, County Durham, DL14 9SU",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 0,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "L84057",
+    "name": {
+      "value": "Barnwood Medical Practice",
+      "matches": [
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    "address": {
+      "value": "Aspen Centre, Horton Road, Gloucester, GL1 3PX",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 5,
+      "address": 0,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "B85641",
+    "name": {
+      "value": "Lockwood Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "3 Meltham Road, Lockwood, HD1 3XH",
+      "matches": [
+        [
+          20,
+          23
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "N85054",
+    "name": {
+      "value": "Kings Lane Medical Practice_kershaw D",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Kings Lane Med Practice, 25 Brackenwood Road, Wirral, CH63 2LR",
+      "matches": [
+        [
+          34,
+          38
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "N81053",
+    "name": {
+      "value": "Earnswood Medical Centre",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Earnswood Medical Centre, Dunwoody Way, Crewe, Cheshire, CW1 3AW",
+      "matches": [
+        [
+          5,
+          8
+        ],
+        [
+          28,
+          32
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "F85008",
+    "name": {
+      "value": "Staunton Group Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Morum House Medical Ctr, 3-5 Bounds Green Road, Wood Green, London, N22 8HE",
+      "matches": [
+        [
+          48,
+          51
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "K83020",
+    "name": {
+      "value": "Rillwood Medical Centre",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Rillwood Medical Centre, Tonmead Road, Lumbertubs, Northampton, NN3 8HZ",
+      "matches": [
+        [
+          4,
+          7
+        ],
+        [
+          28,
+          30
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "C84695",
+    "name": {
+      "value": "The Alice Medical Centre",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "The Alice Medical Centre, 1 Carnwood Road, Bestwood Estate, Nottingham, NG5 5HW",
+      "matches": [
+        [
+          31,
+          35
+        ],
+        [
+          47,
+          50
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "K84046",
+    "name": {
+      "value": "Wychwood Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "The Wychwood Surgery, Meadow Lane, Shipton Under Wychwood, Oxfordshire, OX7 6BW",
+      "matches": [
+        [
+          8,
+          11
+        ],
+        [
+          22,
+          24
+        ],
+        [
+          53,
+          56
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "B85016",
+    "name": {
+      "value": "Meltham Road Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Meltham Road Surgery, 9 Meltham Road, Lockwood, Huddersfield, West Yorkshire, HD1 3UP",
+      "matches": [
+        [
+          42,
+          45
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "M83072",
+    "name": {
+      "value": "Salters Meadow Health Ctr",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Salters Meadow Health Ctr, Rugeley Road, Chase Terrace, Burntwood, Staffordshire, WS7 1AQ",
+      "matches": [
+        [
+          8,
+          10
+        ],
+        [
+          61,
+          64
+        ]
+      ]
+    },
+    "practitioners": [
+
+    ],
+    "score": {
+      "name": 0,
+      "address": 5,
+      "practitioners": 0
+    }
+  },
+  {
+    "code": "M84044",
+    "name": {
+      "value": "Harbury Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Harbury Surgery, Mill Street, Harbury, Leamington Spa, Warwickshire, CV33 9HR",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+      {
+        "value": "Melinda Wood",
+        "matches": [
+          [
+            8,
+            11
+          ]
+        ]
+      }
+    ],
+    "score": {
+      "name": 0,
+      "address": 0,
+      "practitioners": 5
+    }
+  },
+  {
+    "code": "H82028",
+    "name": {
+      "value": "The Courtyard Surgery",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "The Courtyard Surgery, 56 London Road, Horsham, West Sussex, RH12 1AT",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+      {
+        "value": "Matt Greenwood",
+        "matches": [
+          [
+            9,
+            13
+          ]
+        ]
+      }
+    ],
+    "score": {
+      "name": 0,
+      "address": 0,
+      "practitioners": 5
+    }
+  },
+  {
+    "code": "H82615",
+    "name": {
+      "value": "Ouse Valley Practice",
+      "matches": [
+
+      ]
+    },
+    "address": {
+      "value": "Dumbledore P/Care Centre, London Road, Handcross, West Sussex, RH17 6HB",
+      "matches": [
+
+      ]
+    },
+    "practitioners": [
+      {
+        "value": "Matthew Greenwood",
+        "matches": [
+          [
+            12,
+            16
+          ]
+        ]
+      }
+    ],
+    "score": {
+      "name": 0,
+      "address": 0,
+      "practitioners": 5
+    }
+  }
+]

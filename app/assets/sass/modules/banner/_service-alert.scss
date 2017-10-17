@@ -1,0 +1,41 @@
+.service-alert {
+  background-color: $service-alert-primary;
+  color: $service-alert-secondary;
+  font-size: $smallprint;
+  line-height: $leading;
+
+  a {
+    color: $service-alert-secondary;
+  }
+}
+
+.service-alert-inner {
+  @extend %block;
+  @extend %contain-floats;
+  padding-bottom: $leading/2;
+  padding-top: $leading/2;
+  font-size: $smallprint*0.82;
+}
+
+.service-alert-inner p {
+  padding: 0;
+  margin: 0;
+  display: table;
+}
+
+.service-alert-inner span {
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+.service-status {
+  border: 2px solid $service-alert-secondary;
+  background-color: $service-alert-secondary;
+  color: $service-alert-primary;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  font-weight: $lightweight;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  display: inline-block;
+}

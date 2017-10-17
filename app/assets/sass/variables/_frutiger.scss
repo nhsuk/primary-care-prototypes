@@ -1,0 +1,73 @@
+@import url('//fast.fonts.net/cssapi/4c65968f-c33e-4eb6-9a5d-ab4f81a0543f.css');
+$family: "Neue Frutiger W01", sans-serif;
+
+// For offline / train dev:
+//$family: "Frutiger Neue", "Frutiger", sans-serif;
+
+/*
+56px
+56px,
+40px,
+28px,
+20px,
+
+16px
+*/
+
+$body: 20px;
+$leading: 16px;
+$lightweight: 200;
+$bodyweight: 400;
+$boldweight: 700;
+$smallprint: 16px;
+
+body {
+  font-family: $family;
+  font-weight: $bodyweight;
+  font-size: $body;
+  line-height: $leading*2;
+}
+
+// Reading width
+.measure {
+  max-width: 34em;
+}
+
+h1,
+.h1 {
+  margin: $leading 0;
+  font-size: 40px;
+  font-weight: $bodyweight;
+  line-height: $leading*3;
+
+  @include media(mid) {
+    font-size: 48px;
+    line-height: $leading*4;
+  }
+}
+
+h2,
+.h2 {
+  margin: 0; padding: $leading 0 0 0;
+  font-size: 30px;
+  font-weight: $boldweight;
+  line-height: $leading*3;
+
+  @include media(mid) {
+    font-size: 32px;
+    line-height: $leading*3;
+  }
+}
+
+h3,
+.h3 {
+  margin: 0; padding: $leading 0;
+  font-size: 24px;
+  font-weight: $boldweight;
+  line-height: $leading*2;
+}
+
+.smallprint {
+  font-size: $smallprint;
+  color: $smallprint-grey;
+}

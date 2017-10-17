@@ -1,0 +1,68 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Stomach ache symptoms and conditions - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Do you want to [title doesn't flow into the third option below]
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+<form class="form" id="pageform">
+
+<div class="form-group">
+<fieldset>
+  <legend class="strong">
+
+  </legend>
+  <div class="multiple-choice" data-target="example-progress">
+    <label for="radio-1" class="block-label">
+      <input id="radio-1" type="radio" name="radio-group" value="radio-1"  onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
+      see someone who is a sexual health specialist?
+    </label>
+    <label for="radio-2" class="block-label">
+      <input id="radio-2" type="radio" name="radio-group" value="radio-2" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      get a test you can do yourself and send off?
+    </label>
+    <label for="radio-3" class="block-label">
+      <input id="radio-3" type="radio" name="radio-group" value="radio-3" onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
+      not bothered
+    </label>
+
+  </div>
+</fieldset>
+
+</div>
+
+<input type="submit" class="button" value="Continue">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

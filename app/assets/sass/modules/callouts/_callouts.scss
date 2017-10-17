@@ -1,0 +1,77 @@
+
+.attention {
+  border: 12px solid #40add7;
+  padding: $leading*2;
+}
+
+.callout {
+  background-color: $callout-background;
+  border: solid $callout-border;
+  border-width: 4px 0;
+  padding: $leading*2;
+  margin: $leading*2 0;
+}
+
+.callout p {
+  padding: 0;
+  margin: 0;
+}
+
+.info-panel {
+  border-left: solid 4px $dark-blue2;
+  padding: 0 $leading*1.5;
+  margin-bottom: $leading;
+}
+
+.muted {
+  background-color: #d9e1e2;
+  padding: $leading*0.5 $leading $leading*0.5 $leading*2;
+  border-left: solid 6px $black;
+  margin-bottom: 32px;
+
+}
+
+.severe {
+  border-top: 12px solid #d81e05;
+  background-color: #fbe8e6;
+  padding: $leading;
+
+}
+
+.severe hr {
+  background-color: #768692;
+}
+
+.warning {
+  background-color: #f8e9e6;
+  padding: $leading $leading*2 $leading $leading*2;
+  border-top: solid 4px #da291c;
+  margin-bottom: 32px;
+}
+
+.warning-yellow {
+  background-color: #fada88;
+  padding: $leading $leading*2 $leading $leading*2;
+  border-top: solid 4px #ffb81c;
+  margin-bottom: 32px;
+}
+
+.warning-against-form {
+  background-color: #f8e9e6;
+  padding: $leading $leading $leading*0.25 $leading*2;
+  border-left: solid 5px #da291c;
+  margin-bottom: 32px;
+}
+
+.warning-against-form-no-bg {
+  padding: 0 0 0 24px;
+  border-left: solid 4px #da291c;
+  margin-bottom: 32px;
+}
+
+.form-warning {
+  background-color: #f8e9e6;
+  padding: $leading $leading*2 $leading $leading*2;
+  border-top: solid 4px #da291c;
+  margin-bottom: 32px;
+}

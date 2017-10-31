@@ -2,12 +2,12 @@
 
 
 {% block page_title %}
-What happens during a chlamydia test
+What happens during a chlamydia test (choose-where-u25)
 {% endblock %}
 
 
 {% block pageTitle %}
-What happens during a chlamydia test
+What happens during a chlamydia test (choose-where-u25)
 {% endblock %}
 
 {% block pageIntro %}
@@ -20,7 +20,7 @@ What happens during a chlamydia test
 
 
 
-<form class="form" id="pageform">
+<form class="form" id="pageform" method="get">
 
 <div class="form-group">
 <fieldset>
@@ -50,16 +50,16 @@ What happens during a chlamydia test
   </legend>
   <div class="single-choices" data-target="example-progress">
     <label for="radio-1" class="block-label" style="font-weight:400;">
-      <input id="radio-1" type="radio" name="radio-group" value="radio-1"  onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      <input id="radio-1" type="radio" name="multiChoose" value="choose-online">
       get a test kit - this is usually free for people under 25 years old
     </label>
 
     <label for="radio-2" class="block-label" style="font-weight:400;">
-      <input id="radio-2" type="radio" name="radio-group" value="radio-2" onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
+      <input id="radio-2" type="radio" name="multiChoose" value="choose-location">
       see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free
     </label>
     <label for="radio-3" class="block-label" style="font-weight:400;">
-      <input id="radio-3" type="radio" name="radio-group" value="radio-3" onclick="document.getElementById('pageform').action='preferred-times';document.getElementById('submit')">
+      <input id="radio-3" type="radio" name="multiChoose" value="choose-both">
       view all options
     </label>
 
@@ -70,7 +70,7 @@ What happens during a chlamydia test
 
 <p class="info-panel" style="margin-bottom: 48px;">You can see your GP. They might refer you to a sexual health expert. You could be asked to pay a prescription charge if you need treatment.</p>
 
-<input type="submit" class="button" value="Continue">
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
 
 </form>
 

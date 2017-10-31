@@ -31,7 +31,7 @@ Do you have any of these symptoms?
 <li>pain in your testicles</li>
 </ul>
 
-<form class="form" id="pageform">
+<form class="form" id="pageform" method="get">
 
 <div class="form-group">
 <fieldset>
@@ -40,11 +40,11 @@ Do you have any of these symptoms?
   </legend>
   <div class="multiple-choice" data-target="example-progress">
     <label for="radio-1" class="block-label">
-      <input id="radio-1" type="radio" name="radio-group" value="radio-1"  onclick="document.getElementById('pageform').action='users-age';document.getElementById('submit')">
+      <input id="radio-1" type="radio" name="hasSymptoms" value="yes" >
       Yes
     </label>
     <label for="radio-2" class="block-label">
-      <input id="radio-2" type="radio" name="radio-group" value="radio-2" onclick="document.getElementById('pageform').action='users-age';document.getElementById('submit')">
+      <input id="radio-2" type="radio" name="hasSymptoms" value="no" >
       No
     </label>
   </div>
@@ -54,7 +54,7 @@ Do you have any of these symptoms?
 
 <!-- <p>If you have symptoms you should be tested by a health professional as soon as possible.</p> -->
 
-<input type="submit" class="button" value="Continue">
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_2/users-age">
 
 </form>
 

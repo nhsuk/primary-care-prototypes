@@ -19,7 +19,7 @@ What times work best for you?
 
 <p>Choose all that apply.</p>
 
-<form class="form" id="pageform">
+<form class="form" id="pageform" method="get">
 
 <div class="form-group">
 <fieldset>
@@ -28,19 +28,19 @@ What times work best for you?
   </legend>
   <div class="multiple-choice" data-target="example-progress">
     <label for="checkbox-1" class="block-label">
-      <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1"  onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      <input id="checkbox-1" type="checkbox" name="time" value="oohweekdays">
       Early morning and late afternoon Monday to Friday
     </label>
     <label for="checkbox-2" class="block-label">
-      <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      <input id="checkbox-2" type="checkbox" name="time" value="lunchweekdays">
       Between midday and 2pm Monday to Friday
     </label>
     <label for="checkbox-3" class="block-label">
-      <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      <input id="checkbox-3" type="checkbox" name="time" value="weekdays">
       Any time Monday to Friday
     </label>
     <label for="checkbox-4" class="block-label">
-      <input id="checkbox-4" type="checkbox" name="checkbox-group" value="checkbox-4" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      <input id="checkbox-4" type="checkbox" name="time" value="weekend">
       Saturday or Sunday
     </label>
   </div>
@@ -48,7 +48,7 @@ What times work best for you?
 
   </div>
 
-<input type="submit" class="button" value="Continue">
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_2/location">
 
 </form>
 

@@ -3288,7 +3288,7 @@ var HTMLDOMPropertyConfig = {
    placeholder: null,
    poster: null,
    preload: null,
-   radioGroup: null,
+   radio-group: null,
    readOnly: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,
    rel: null,
    required: HAS_BOOLEAN_VALUE,
@@ -3383,7 +3383,7 @@ var HTMLDOMPropertyConfig = {
    // http://www.w3.org/TR/html5/forms.html#dom-fs-encoding
    encType: 'encoding',
    hrefLang: 'hreflang',
-   radioGroup: 'radiogroup',
+   radio-group: 'radiogroup',
    spellCheck: 'spellcheck',
    srcDoc: 'srcdoc',
    srcSet: 'srcset'

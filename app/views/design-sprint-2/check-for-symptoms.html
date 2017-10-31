@@ -1,0 +1,76 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Find a chlamydia test
+{% endblock %}
+
+
+{% block pageTitle %}
+Find a chlamydia test
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<p>The only way to know if you have chlamydia is to get a test. You can get a test even if you have no symptoms.</p>
+
+<h2 class="h3">Do you have any of these symptoms?</h2>
+<ul>
+<li>discomfort or pain when urinating (weeing)</li>
+<li>unusual vaginal discharge</li>
+<li>bleeding between periods (even if you use hormonal contraception like the pill or an implant)</li>
+<li>bleeding during or after sex</li>
+<li>pain during sex</li>
+<li>pelvic pain (in women)</li>
+<li>any discharge from your penis or bottom</li>
+<li>pain in your testicles</li>
+</ul>
+
+<form class="form" id="pageform">
+
+<div class="form-group">
+<fieldset>
+  <legend class="strong">
+
+  </legend>
+  <div class="multiple-choice" data-target="example-progress">
+    <label for="radio-1" class="block-label">
+      <input id="radio-1" type="radio" name="radio-group" value="radio-1"  onclick="document.getElementById('pageform').action='choose-where-if-yes';document.getElementById('submit')">
+      Yes
+    </label>
+    <label for="radio-2" class="block-label">
+      <input id="radio-2" type="radio" name="radio-group" value="radio-2" onclick="document.getElementById('pageform').action='choose-where';document.getElementById('submit')">
+      No
+    </label>
+  </div>
+</fieldset>
+
+</div>
+
+<!-- <p>If you have symptoms you should be tested by a health professional as soon as possible.</p> -->
+
+<input type="submit" class="button" value="Continue">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

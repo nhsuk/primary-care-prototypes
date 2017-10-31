@@ -1,0 +1,72 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Book an appointment - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Do you have any of these symptoms?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<ul>
+<li>Symptom 1</li>
+<li>Symptom 2</li>
+<li>Symptom 3</li>
+</ul>
+
+
+
+<details style="margin-top: 16px; margin-bottom: 32px;">
+
+<summary style="color:#0072c6;"><span class="nearest_opening_times" style="text-decoration: underline;">If you haven't registered for online services</span></summary>
+
+<div class="info-panel">
+  <p>Ask your surgery for an online services registration form. After you fill in the form, the surgery will send you a username and password.</p>
+</div>
+
+</details>
+
+
+<form action="">
+
+<fieldset style="margin-top: 48px;">
+<legend style="font-weight: 600;">
+  What's the name of your GP surgery?
+</legend>
+<hint>We need to know this so we can take you to the right booking system.</hint>
+  <div class="form-group">
+    <input type="text" size="30" name="surgeryName"  style="margin-bottom: 0;">
+  </div>
+</fieldset>
+
+<a href="book-an-appointment-no-text-entered" type="submit" class="button" style="margin-top: 0; margin-bottom: 0;">Next</a>
+
+</form>
+
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+{% endblock%}
+
+
+{% block mutedCallout%}
+
+{% endblock%}
+
+
+{% block body_after %}
+
+{% endblock %}

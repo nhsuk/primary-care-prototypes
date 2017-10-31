@@ -1,6 +1,4 @@
-# Connect to a GP service
-Design prototypes for Connecting to Services project, particularly the connect to a GP route.
-
+# Primary care prototypes
 Note this is prototype code. Not intended for production use.
 
 ## Getting started

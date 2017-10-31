@@ -2,12 +2,12 @@
 
 
 {% block page_title %}
-We recommend that you see someone
+We recommend that you see someone (choose-where-if-yes)
 {% endblock %}
 
 
 {% block pageTitle %}
-We recommend that you see someone
+We recommend that you see someone (choose-where-if-yes)
 {% endblock %}
 
 {% block pageIntro %}
@@ -48,7 +48,7 @@ We recommend that you see someone
 
 <p>You might be able to collect your own samples even if you see a nurse or doctor.</p>
 
-<form class="form" id="pageform" action="preferred-times">
+<form class="form" id="pageform" method="get">
 
 <div class="form-group">
 <fieldset>
@@ -57,7 +57,7 @@ We recommend that you see someone
   </legend>
   <div class="multiple-choice" data-target="example-progress">
     <label for="checkbox-1" class="block-label">
-      <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1">
+      <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-both">
       Also show me places I can get a test kit
     </label>
 
@@ -66,7 +66,7 @@ We recommend that you see someone
 
 </div>
 
-<input type="submit" class="button" value="Continue">
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
 
 </form>
 

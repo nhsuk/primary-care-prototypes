@@ -1,0 +1,70 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+What times work best for you?
+{% endblock %}
+
+
+{% block pageTitle %}
+What times work best for you?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<p>Choose all that apply.</p>
+
+<form class="form" id="pageform">
+
+<div class="form-group">
+<fieldset>
+  <legend class="strong">
+
+  </legend>
+  <div class="multiple-choice" data-target="example-progress">
+    <label for="checkbox-1" class="block-label">
+      <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1"  onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      Early morning and late afternoon Monday to Friday
+    </label>
+    <label for="checkbox-2" class="block-label">
+      <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      Between midday and 2pm Monday to Friday
+    </label>
+    <label for="checkbox-3" class="block-label">
+      <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      Any time Monday to Friday
+    </label>
+    <label for="checkbox-4" class="block-label">
+      <input id="checkbox-4" type="checkbox" name="checkbox-group" value="checkbox-4" onclick="document.getElementById('pageform').action='users-location';document.getElementById('submit')">
+      Saturday or Sunday
+    </label>
+  </div>
+</fieldset>
+
+  </div>
+
+<input type="submit" class="button" value="Continue">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+How old are you?
+{% endblock %}
+
+
+{% block pageTitle %}
+How old are you?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<form class="form" id="pageform" action="places-to-go">
+  <div class="form-group">
+    <fieldset>
+      <legend class="visually-hidden">
+      </legend>
+      <div class="form-group form-group-compound">
+        <input class="form-dob" type="text" id="age" length="3" style="display: inline; width: 90px; margin-right: 8px" onclick="document.getElementById('pageform').action='choose-where';document.getElementById('submit')"> years
+      </div>
+    </fieldset>
+
+  </div>
+
+
+  <input type="submit" class="button" value="Continue">
+  
+</form>
+
+<div class="info-panel" style="margin-top: 48px;">
+  <strong>Why are we asking this?</strong><br />
+  We may show services aimed at your specific needs.
+</div>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

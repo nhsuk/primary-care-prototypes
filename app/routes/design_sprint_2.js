@@ -60,13 +60,9 @@ router.get('/choices', function (req, res) {
 
 router.get('/need-time', function (req, res) {
   var multiChoose = req.query.multiChoose;
-  if (multiChoose == undefined) {
-    req.session.multiChoose = 'choose-location';
-  } else {
-    req.session.multiChoose = multiChoose;
-  }
+  req.session.multiChoose = multiChoose;
 
-  if ((multiChoose == 'choose-location') || (multiChoose == 'choose-both')) {
+  if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
     res.render('design_sprint_2/preferred-times');
   } else {
     res.render('design_sprint_2/users-location-online');
@@ -76,19 +72,31 @@ router.get('/need-time', function (req, res) {
 router.get('/preferred-time', function (req, res) {
   var time = req.query.time;
   req.session.time = time;
-  res.render('design_sprint_2/location')
-
+  multiChoose = req.session.multiChoose;
+  
+  if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
+    res.render('design_sprint_2/users-location-all3');
+  } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) { 
+    res.render('design_sprint_2/users-location');
+  } else {
+    res.render('design_sprint_2/users-online');
+  }
 });
 
 router.get('/location', function (req, res) {
   var time = req.query.time;
   req.session.time = time;
-  multiChoose = req.session.multiChoose;
+  multiChoose = req.session.multiChoose; 
+  if (multiChoose == 'undefined') {
+    multiChoose = req.query.multiChoose;
+  }
 
-  if (multiChoose == 'choose-location') {
+  if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
+    res.render('design_sprint_2/users-location-all3');
+  } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) { 
     res.render('design_sprint_2/users-location');
   } else {
-    res.render('design_sprint_2/users-location-both');
+    res.render('design_sprint_2/users-online');
   }
 });
 

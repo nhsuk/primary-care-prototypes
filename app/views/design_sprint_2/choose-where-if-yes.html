@@ -30,23 +30,42 @@ We recommend that you see someone
 
 <p>You'll usually have to pay for a self-test kit.</p>
 
-<form class="form" id="pageform" method="get">
+<details class="slef-test" role="group">
+  <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false">
+    <span class="details__summary">TODO: If you want to use a self-test kit</span>
+  </summary>
 
-<div class="form-group">
-<fieldset>
-  <legend class="strong">
+  <div id="details-content-0" aria-hidden="true">
+    <div class="reading-width">
+      <p>You can get a self-test kit to take your own samples at home. You'll usually have to send your samples by post to be tested. You could wait up to a week to get the results. 
+      </p>
 
-  </legend>
-  <div class="multiple-choice" data-target="example-progress">
-    <label for="checkbox-1" class="block-label">
-      <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-both">
-      Show places I can get a self-test kit
-    </label>
+      <p>You'll usually have to pay for a test.</p>
 
+      <form class="form" id="pageform" method="get">
+
+      <div class="form-group">
+      <fieldset>
+        <legend class="strong">
+
+        </legend>
+        <div class="multiple-choice" data-target="example-progress">
+          <label for="checkbox-1" class="block-label">
+            <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-online">
+            Order a self-test kit online
+          </label>
+          <label for="checkbox-2" class="block-label">
+            <input id="checkbox-2" type="checkbox" name="multiChoose" value="choose-pharmacy">
+            Pick up a self test kit from a pharmacy
+          </label>
+          <input id="checkbox-3" type="hidden" name="multiChoose" value="choose-location" />
+        </div>
+      </fieldset>
+
+      </div>
+    </div>
   </div>
-</fieldset>
-
-</div>
+</details>
 
 <input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
 

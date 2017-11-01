@@ -18,62 +18,56 @@ What happens during a chlamydia test (choose-where)
 {% block content %}
 
 
-
-
 <form class="form" id="pageform" method="get">
-
-<div class="form-group">
-<fieldset>
-  <legend class="strong">
-    <!-- You can:
-    <ul>
-    <li>use a kit to take your own samples - this is usually free for people under 25 years old</li>
-    <li>see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free</li>
-    <li>see your GP - they might refer you to a sexual health expert, and you could be asked to pay a prescription charge if you need treatment</li>
-    </ul> -->
-
-<!-- <h2 class="h3">What happens during a chlamydia test</h2> -->
-
-<p>Samples will be collected from the areas you have symptoms using one or both of the following methods: 
-</p>
-
-<ul>
-<li>swab - a small cotton bud which is wiped over the area with symptoms</li>
-<li>urine (wee) collection</li>
-</ul>
-
-<p>The samples will be sent to a lab for testing.</p>
-<p>If you see a sexual health expert, they'll ask questions about your symptoms and sexual activity to understand what kind of test you need. 
-</p>
-
-    <h3>What would you like to do?</h3>
-  </legend>
-  <div class="single-choices" data-target="example-progress">
-    <label for="radio-1" class="block-label" style="font-weight:400;">
-      <input id="radio-1" type="radio" name="multiChoose" value="choose-online">
-      get a test kit - this is usually free for people under 25 years old
-    </label>
-
-    <label for="radio-2" class="block-label" style="font-weight:400;">
-      <input id="radio-2" type="radio" name="multiChoose" value="choose-location">
-      see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free
-    </label>
-    <label for="radio-3" class="block-label" style="font-weight:400;">
-      <input id="radio-3" type="radio" name="multiChoose" value="choose-both">
-      view all options
-    </label>
-
+  <div class="form-group">
+    <fieldset>
+      <legend class="strong">
+        <!-- You can:
+        <ul>
+        <li>use a kit to take your own samples - this is usually free for people under 25 years old</li>
+        <li>see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free</li>
+        <li>see your GP - they might refer you to a sexual health expert, and you could be asked to pay a prescription charge if you need treatment</li>
+        </ul> -->
+    
+    <!-- <h2 class="h3">What happens during a chlamydia test</h2> -->
+    
+        <p>Samples will be collected from the areas you have symptoms using one or both of the following methods: 
+        </p>
+        
+        <ul>
+        <li>swab - a small cotton bud which is wiped over the area with symptoms</li>
+        <li>urine (wee) collection</li>
+        </ul>
+        
+        <p>The samples will be sent to a lab for testing.</p>
+        <p>If you see a sexual health expert, they'll ask questions about your symptoms and sexual activity to understand what kind of test you need. 
+        </p>
+    
+        <h3>What would you like to do?</h3>
+      </legend>
+      
+      <div class="multiple-choice" data-target="example-progress">
+        <label for="checkbox-1" class="block-label">
+          <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-location">
+          See a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to
+        </label>
+        <label for="checkbox-2" class="block-label">
+          <input id="checkbox-2" type="checkbox" name="multiChoose" value="choose-online">
+          Order a self-test kit online
+        </label>
+        <label for="checkbox-3" class="block-label">
+          <input id="checkbox-3" type="checkbox" name="multiChoose" value="choose-pharmacy">
+          Pick up a self test kit from a pharmacy
+        </label>
+      </div>
+    </fieldset>
   </div>
-</fieldset>
 
-</div>
+  <p class="info-panel" style="margin-bottom: 48px;">You can see your GP. They might refer you to a sexual health expert. You could be asked to pay a prescription charge if you need treatment.</p>
 
-<p class="info-panel" style="margin-bottom: 48px;">You can see your GP. They might refer you to a sexual health expert. You could be asked to pay a prescription charge if you need treatment.</p>
-
-<input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
+  <input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
 
 </form>
-
 
 {% endblock %}
 

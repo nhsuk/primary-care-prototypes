@@ -1,0 +1,75 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Where would you like to find help? (users-location-all3)
+{% endblock %}
+
+
+{% block pageTitle %}
+Where would you like to find help? (users-location-all3)
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<form class="form" id="pageform" method="get">
+  <div class="form-group">
+    <fieldset>
+      <legend class="visually-hidden">
+      </legend>
+      <div class="form-group form-group-compound">
+        <label class="form-label" for="address-line-1" style="font-weight:400;">This can be a street, town, city, or postcode.</label>
+        <input class="form-control" type="text" name="location" id="address-line-1">
+      </div>
+    </fieldset>
+  </div>
+
+  <details class="slef-test" role="group">
+    <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false">
+      <span class="details__summary">TODO: If your home address is different</span>
+    </summary>
+
+    <div id="details-content-0" aria-hidden="true">
+      <div class="reading-width">
+        <p>TODO:
+        </p>
+
+        <fieldset>
+          <legend class="strong">
+
+          </legend>
+          <div class="form-group form-group-compound">
+            <label class="form-label" for="address-line-1" style="font-weight:400;">This can be a street, town, city, or postcode.</label>
+            <input class="form-control" type="text" name="location-2" id="address-line-2">
+          </div>
+        </fieldset>
+
+      </div>
+    </div>
+  </details>
+  
+  <input type="submit" class="button" value="Continue" formaction="/design_sprint_2/places-to-go" >
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

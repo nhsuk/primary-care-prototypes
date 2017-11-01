@@ -63,9 +63,13 @@ router.get('/need-time', function (req, res) {
   req.session.multiChoose = multiChoose;
 
   if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
-    res.render('design_sprint_2/preferred-times');
+    res.render('design_sprint_2/preferred-times', {
+    session: req.session
+  });
   } else {
-    res.render('design_sprint_2/users-location-online');
+    res.render('design_sprint_2/users-location-online', {
+    session: req.session
+  });
   }
 });
 
@@ -75,11 +79,17 @@ router.get('/preferred-time', function (req, res) {
   multiChoose = req.session.multiChoose;
   
   if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
-    res.render('design_sprint_2/users-location-all3');
+    res.render('design_sprint_2/users-location-all3', {
+      session: req.session
+    });
   } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) { 
-    res.render('design_sprint_2/users-location');
+    res.render('design_sprint_2/users-location', {
+      session: req.session
+    });
   } else {
-    res.render('design_sprint_2/users-online');
+    res.render('design_sprint_2/users-online', {
+      session: req.session
+    });
   }
 });
 
@@ -92,11 +102,88 @@ router.get('/location', function (req, res) {
   }
 
   if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
-    res.render('design_sprint_2/users-location-all3');
+    res.render('design_sprint_2/users-location-all3', {
+      session: req.session
+    });
   } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) { 
-    res.render('design_sprint_2/users-location');
+    res.render('design_sprint_2/users-location', {
+      session: req.session
+    });
   } else {
-    res.render('design_sprint_2/users-online');
+    res.render('design_sprint_2/users-online', {
+      session: req.session
+    });
+  }
+});
+
+router.get('/places-to-go', function (req, res) {
+  hasSymptoms = req.session.hasSymptoms; 
+  age = req.session.age; 
+  multiChoose = req.session.multiChoose;
+  
+  if (hasSymptoms === 'yes') {
+    if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
+      res.render('design_sprint_2/results-3', {
+        session: req.session
+      });
+    } else if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
+      res.render('design_sprint_2/results-2', {
+        session: req.session
+      });
+    }
+    else if ((multiChoose.includes('choose-location'))) {
+      res.render('design_sprint_2/results-1', {
+        session: req.session
+      });
+    }
+  } else {
+    if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
+      if (parseInt(age) >= 25) {
+        res.render('design_sprint_2/results-3', {
+          session: req.session
+        }); 
+      } else {
+        res.render('design_sprint_2/results-9', {
+          session: req.session
+        });
+      }
+    } else if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
+      if (parseInt(age) >= 25) {
+        res.render('design_sprint_2/results-2', {
+          session: req.session
+        }); 
+      } else {
+        res.render('design_sprint_2/results-10', {
+          session: req.session
+        });
+      }
+    } else if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-location'))) {
+      if (parseInt(age) >= 25) {
+        res.render('design_sprint_2/results-7', {
+          session: req.session
+        });
+      } else {
+        res.render('design_sprint_2/results-6', {
+          session: req.session
+        });
+      }
+    } else if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-pharmacies'))) {
+      res.render('design_sprint_2/results-8', {
+        session: req.session
+      });
+    } else if ((multiChoose.includes('choose-location'))) {
+      res.render('design_sprint_2/results-1', {
+        session: req.session
+      });
+    } else if ((multiChoose.includes('choose-pharmacy'))) {
+      res.render('design_sprint_2/results-5', {
+        session: req.session
+      });
+    } else { //choose-online
+      res.render('design_sprint_2/results-4', {
+        session: req.session
+      });
+    } 
   }
 });
 

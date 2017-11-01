@@ -815,6 +815,11 @@ label .form-hint {
   height: 38px;
 }
 
+.block-label .extra-info {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 .js-enabled .block-label input {
   position: absolute;
   overflow: hidden;

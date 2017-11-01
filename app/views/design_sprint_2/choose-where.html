@@ -2,12 +2,12 @@
 
 
 {% block page_title %}
-What happens during a chlamydia test (choose-where)
+What would you like to do?
 {% endblock %}
 
 
 {% block pageTitle %}
-What happens during a chlamydia test (choose-where)
+What would you like to do?
 {% endblock %}
 
 {% block pageIntro %}
@@ -22,52 +22,32 @@ What happens during a chlamydia test (choose-where)
   <div class="form-group">
     <fieldset>
       <legend class="strong">
-        <!-- You can:
-        <ul>
-        <li>use a kit to take your own samples - this is usually free for people under 25 years old</li>
-        <li>see a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to, and treatment is usually free</li>
-        <li>see your GP - they might refer you to a sexual health expert, and you could be asked to pay a prescription charge if you need treatment</li>
-        </ul> -->
-    
-    <!-- <h2 class="h3">What happens during a chlamydia test</h2> -->
-    
-        <p>Samples will be collected from the areas you have symptoms using one or both of the following methods: 
-        </p>
-        
-        <ul>
-        <li>swab - a small cotton bud which is wiped over the area with symptoms</li>
-        <li>urine (wee) collection</li>
-        </ul>
-        
-        <p>The samples will be sent to a lab for testing.</p>
-        <p>If you see a sexual health expert, they'll ask questions about your symptoms and sexual activity to understand what kind of test you need. 
-        </p>
-    
-        <h3>What would you like to do?</h3>
+        <p>If you're not sure, you can choose more than one.</p>
       </legend>
       
       <div class="multiple-choice" data-target="example-progress">
         <label for="checkbox-1" class="block-label">
-          <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-location">
-          See a sexual health expert - they will usually give you the results quicker than a GP, they won't share your results unless you ask them to
+          <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-pharmacy">
+          Pick up a free self-test kit from a pharmacy
+          <p class="extra-info">Get a free kit to take your own samples and send them by post to be tested. Your results are private. Treatment is free if you need it.</p>
         </label>
         <label for="checkbox-2" class="block-label">
           <input id="checkbox-2" type="checkbox" name="multiChoose" value="choose-online">
-          Order a self-test kit online
+          Order a free self-test kit online 
+          <p class="extra-info">Get a free kit sent to you by post. The packaging is discreet. You'll take your own samples and send them back to be tested. Your results are private. Treatment is free if you need it.</p>
         </label>
         <label for="checkbox-3" class="block-label">
-          <input id="checkbox-3" type="checkbox" name="multiChoose" value="choose-pharmacy">
-          Pick up a self test kit from a pharmacy
+          <input id="checkbox-3" type="checkbox" name="multiChoose" value="choose-location">
+          See a sexual health professional
+          <p class="extra-info">Testing is free, and treatment is free if you need it. They won't share your results unless you ask them to.</p>
         </label>
       </div>
     </fieldset>
   </div>
-
-  <p class="info-panel" style="margin-bottom: 48px;">You can see your GP. They might refer you to a sexual health expert. You could be asked to pay a prescription charge if you need treatment.</p>
-
   <input type="submit" class="button" value="Continue" formaction="/design_sprint_2/need-time">
 
 </form>
+
 
 {% endblock %}
 

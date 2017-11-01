@@ -2,12 +2,12 @@
 
 
 {% block page_title %}
-Where would you like to find help? (users-location-online)
+Where do you want the self-test kit delivered to?
 {% endblock %}
 
 
 {% block pageTitle %}
-Where would you like to find help? (users-location-online)
+Where do you want the self-test kit delivered to?
 {% endblock %}
 
 {% block pageIntro %}
@@ -17,13 +17,15 @@ Where would you like to find help? (users-location-online)
 
 {% block content %}
 
+<p>We'll show you the website where you can order your kit.</p>
+
 <form class="form" id="pageform" method="get">
   <div class="form-group">
     <fieldset>
       <legend class="visually-hidden">
       </legend>
       <div class="form-group form-group-compound">
-        <label class="form-label" for="address-line-1" style="font-weight:400;">This can be a street, town, city, or postcode.</label>
+        <label class="form-label" for="address-line-1" style="font-weight:400;">Enter a postcode.</label>
         <input class="form-control" type="text" name="location" id="address-line-1">
       </div>
     </fieldset>

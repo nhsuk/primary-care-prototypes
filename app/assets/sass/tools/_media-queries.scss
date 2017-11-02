@@ -19,7 +19,7 @@
       @content;
     }
   } @else if $size == mid {
-    @media (min-width: 500px) {
+    @media (min-width: 540px) {
       @content
     }
   } @else {

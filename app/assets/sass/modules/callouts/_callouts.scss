@@ -36,6 +36,16 @@
 
 }
 
+.beware {
+  background-color: #ffffff;
+  padding: $leading*0.5 $leading $leading*0.5 $leading*2;
+  border-left: solid 12px $black;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+}
+
+
 .severe {
   border-top: 12px solid #d81e05;
   background-color: #fbe8e6;

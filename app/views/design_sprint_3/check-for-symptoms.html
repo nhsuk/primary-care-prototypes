@@ -1,0 +1,74 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Do you have any of these symptoms?
+{% endblock %}
+
+
+{% block pageTitle %}
+Do you have any of these symptoms?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<ul>
+<li>discomfort or pain when urinating (peeing)</li>
+<li>discharge from your bottom</li>
+<li>vaginal discharge that is not usual for you</li>
+<li>bleeding between periods (even if you use contraception)</li>
+<li>bleeding during or after sex (in women)</li>
+<li>pain during sex (in women)</li>
+<li>pelvic pain (in women)</li>
+<li>discharge from your penis</li>
+<li>pain in your testicles</li>
+</ul>
+
+<form class="form" id="pageform" method="get">
+
+<div class="form-group">
+<fieldset>
+  <legend class="strong">
+
+  </legend>
+  <div class="multiple-choice" data-target="example-progress">
+    <label for="radio-1" class="block-label">
+      <input id="radio-1" type="radio" name="hasSymptoms" value="yes" >
+      Yes, I have some of these symptoms
+    </label>
+    <label for="radio-2" class="block-label">
+      <input id="radio-2" type="radio" name="hasSymptoms" value="no" >
+      No, I don't think I have any of these symptoms
+    </label>
+  </div>
+</fieldset>
+
+</div>
+
+<!-- <p>If you have symptoms you should be tested by a health professional as soon as possible.</p> -->
+
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_3/users-age">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

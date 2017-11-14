@@ -1,0 +1,53 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Something
+{% endblock %}
+
+
+{% block pageTitle %}
+Where to go
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="warning">
+<b>We recommend that you see someone</b>
+
+</div>
+
+<form class="form" id="pageform" method="get">
+
+<p>If you have chlamydia symptoms you should see a sexual health professional to get tested. </p>
+<p>This is free.</p>
+<p>We'll help you find the best places for you.</p>
+
+<input id="checkbox-3" type="hidden" name="multiChoose" value="choose-location" />
+
+
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_3/need-time">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

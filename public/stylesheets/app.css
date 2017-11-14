@@ -51,7 +51,7 @@ h1, .heading-xxlarge, .primary,
   line-height: 48px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   h1, .heading-xxlarge, .primary,
   .h1 {
     font-size: 48px;
@@ -68,7 +68,7 @@ h2, .heading-xlarge, .secondary,
   line-height: 48px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   h2, .heading-xlarge, .secondary,
   .h2 {
     font-size: 32px;
@@ -444,7 +444,7 @@ hr {
   box-shadow: 0 0 0 5px #FFB81C;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   .button {
     width: auto;
     margin: 0 16px 0 0;
@@ -698,13 +698,13 @@ form {
   margin: 16px 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   .form-group.-controls {
     float: left;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   .form-group.-controls .button {
     float: right;
   }
@@ -731,7 +731,7 @@ input[type='tel'] {
   line-height: 32px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   input[type='text'],
   input[type='number'],
   input[type='tel'] {
@@ -799,7 +799,7 @@ label .form-hint {
   cursor: pointer;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   .block-label {
     float: left;
     clear: both;
@@ -925,7 +925,7 @@ textarea {
   background-size: 100% 32px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   textarea {
     width: 75%;
   }
@@ -943,7 +943,7 @@ textarea:focus {
   width: calc(100% - 52px);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   .gp-finder-search .form-control {
     width: 75%;
   }
@@ -1122,6 +1122,7 @@ label {
 }
 
 #global-header {
+  background-color: #0072c6;
   border-bottom: 3px solid #0072c6;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -1211,6 +1212,11 @@ label {
   margin: 0;
 }
 
+.primary-care {
+  border: 8px solid #0072ce;
+  padding: 32px;
+}
+
 .info-panel {
   border-left: solid 4px #006BBD;
   padding: 0 24px;
@@ -1222,6 +1228,14 @@ label {
   padding: 8px 16px 8px 32px;
   border-left: solid 6px #231f20;
   margin-bottom: 32px;
+}
+
+.beware {
+  background-color: #ffffff;
+  padding: 8px 16px 8px 32px;
+  border-left: solid 12px #231f20;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .severe {

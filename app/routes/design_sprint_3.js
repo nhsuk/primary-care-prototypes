@@ -100,16 +100,7 @@ router.get('/places-to-go', function (req, res) {
   multiChoose = req.session.multiChoose;
 
   if (hasSymptoms === 'yes') {
-    if ((multiChoose.length == 3) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
-      res.render('design_sprint_3/results-3');
-    }
-    if ((multiChoose.length == 3) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
-      res.render('design_sprint_3/results-2');
-    }
-    if ((multiChoose.length == 3) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-online'))) {
-      res.render('design_sprint_3/results-7');
-    }
-    if ((multiChoose.length == 1) && (multiChoose.includes('choose-location'))) {
+    if (multiChoose.includes('choose-location')) {
       res.render('design_sprint_3/results-1');
     }
   } else if (hasSymptoms === 'no') {

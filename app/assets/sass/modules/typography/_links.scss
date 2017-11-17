@@ -1,3 +1,18 @@
+a.on-blue {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a.on-blue:hover {
+  color: #d4efff;
+  text-decoration: underline;
+}
+
+a.on-blue:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
 a {
     color: $link-colour;
     text-decoration: underline;

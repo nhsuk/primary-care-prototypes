@@ -4,19 +4,19 @@ var router = express.Router()
 var request = require('request')
 var naturalSort = require('javascript-natural-sort')
 
-// design_sprint_4 prototype.
+// design_sprint_3a prototype.
 // URL structure is /design_sprint_2/ROUTE
 
 
 router.get('/intro', function (req, res) {
   req.session.destroy();
-  res.render('design_sprint_4/intro', {
+  res.render('design_sprint_3a/intro', {
     suppressServiceName: true
   });
 });
 
 router.get('/check-for-symptoms', function (req, res) {
-  res.render('design_sprint_4/check-for-symptoms', {
+  res.render('design_sprint_3a/check-for-symptoms', {
     session: req.session
   });
 });
@@ -24,7 +24,7 @@ router.get('/check-for-symptoms', function (req, res) {
 router.get('/users-age', function (req, res) {
   var hasSymptoms = req.query.hasSymptoms;
   req.session.hasSymptoms = hasSymptoms;
-  res.render('design_sprint_4/users-age');
+  res.render('design_sprint_3a/users-age');
 });
 
 router.get('/choices', function (req, res) {
@@ -32,18 +32,18 @@ router.get('/choices', function (req, res) {
   req.session.age = age;
   hasSymptoms = req.session.hasSymptoms;
   if (parseInt(age) < 16) {
-    res.render('design_sprint_4/under16');
+    res.render('design_sprint_3a/under16');
   } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
     if (hasSymptoms === 'yes') {
-      res.render('design_sprint_4/choose-where-if-yes-u25');
+      res.render('design_sprint_3a/choose-where-if-yes-u25');
     } else {
-      res.render('design_sprint_4/choose-where-u25');
+      res.render('design_sprint_3a/choose-where-u25');
     }
   } else {
     if (hasSymptoms === 'yes') {
-      res.render('design_sprint_4/choose-where-if-yes');
+      res.render('design_sprint_3a/choose-where-if-yes');
     } else {
-      res.render('design_sprint_4/choose-where');
+      res.render('design_sprint_3a/choose-where');
     }
   }
 });
@@ -53,9 +53,9 @@ router.get('/need-time', function (req, res) {
   req.session.multiChoose = multiChoose;
 
   if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
-    res.render('design_sprint_4/preferred-times');
+    res.render('design_sprint_3a/preferred-times');
   } else {
-    res.render('design_sprint_4/users-location-online');
+    res.render('design_sprint_3a/users-location-online');
   }
 });
 
@@ -65,13 +65,13 @@ router.get('/preferred-time', function (req, res) {
   multiChoose = req.session.multiChoose;
 
   if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
-    res.render('design_sprint_4/users-location-all3');
+    res.render('design_sprint_3a/users-location-all3');
   } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
-    res.render('design_sprint_4/users-location', {
+    res.render('design_sprint_3a/users-location', {
       session: req.session
     });
   } else {
-    res.render('design_sprint_4/users-online');
+    res.render('design_sprint_3a/users-online');
   }
 });
 
@@ -84,13 +84,13 @@ router.get('/location', function (req, res) {
   }
 
   if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
-    res.render('design_sprint_4/users-location-all3');
+    res.render('design_sprint_3a/users-location-all3');
   } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
-    res.render('design_sprint_4/users-location', {
+    res.render('design_sprint_3a/users-location', {
       session: req.session
     });
   } else {
-    res.render('design_sprint_4/users-online');
+    res.render('design_sprint_3a/users-online');
   }
 });
 
@@ -101,42 +101,42 @@ router.get('/places-to-go', function (req, res) {
 
   if (hasSymptoms === 'yes') {
     if (multiChoose.includes('choose-location')) {
-      res.render('design_sprint_4/results-1');
+      res.render('design_sprint_3a/results-1');
     }
   } else if (hasSymptoms === 'no') {
       if (multiChoose.length == 3) {
         if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
           if (parseInt(age) >= 25) {
-            res.render('design_sprint_4/results-3');
+            res.render('design_sprint_3a/results-3');
           } else {
-            res.render('design_sprint_4/results-9');
+            res.render('design_sprint_3a/results-9');
           }
         }
       } else if (multiChoose.length == 2) {
           if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
             if (parseInt(age) >= 25) {
-              res.render('design_sprint_4/results-2');
+              res.render('design_sprint_3a/results-2');
             } else {
-              res.render('design_sprint_4/results-10');
+              res.render('design_sprint_3a/results-10');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-location'))) {
             if (parseInt(age) >= 25) {
-              res.render('design_sprint_4/results-7');
+              res.render('design_sprint_3a/results-7');
             } else {
-              res.render('design_sprint_4/results-6');
+              res.render('design_sprint_3a/results-6');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-pharmacy'))) {
-            res.render('design_sprint_4/results-8');
+            res.render('design_sprint_3a/results-8');
           }
       } else if (multiChoose.length == 1) {
           if (multiChoose.includes('choose-location')) {
-            res.render('design_sprint_4/results-1');
+            res.render('design_sprint_3a/results-1');
           } else if (multiChoose.includes('choose-pharmacy')) {
-            res.render('design_sprint_4/results-5');
+            res.render('design_sprint_3a/results-5');
           } else if (multiChoose.includes('choose-online')) {
-            res.render('design_sprint_4/results-4');
+            res.render('design_sprint_3a/results-4');
           }
       }
   }

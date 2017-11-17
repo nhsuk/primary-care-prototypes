@@ -23,7 +23,7 @@ var MVP_v1 = require('./app/routes/MVP_v1');
 var MVP_v1_1 = require('./app/routes/MVP_v1_1');
 var design_sprint_2 = require('./app/routes/design_sprint_2');
 var design_sprint_3 = require('./app/routes/design_sprint_3');
-var design_sprint_4 = require('./app/routes/design_sprint_4');
+var design_sprint_3a = require('./app/routes/design_sprint_3a');
 
 
 var app = express()
@@ -101,7 +101,7 @@ app.use('/MVP_v1', MVP_v1);
 app.use('/MVP_v1_1', MVP_v1_1);
 app.use('/design_sprint_2', design_sprint_2);
 app.use('/design_sprint_3', design_sprint_3);
-app.use('/design_sprint_4', design_sprint_4);
+app.use('/design_sprint_3a', design_sprint_3a);
 
 
 // auto render any view that exists

@@ -1,0 +1,81 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+How old are you?
+{% endblock %}
+
+
+{% block pageTitle %}
+How old are you?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<form class="form" id="pageform" method="get">
+
+
+
+
+  <div class="form-group">
+  <fieldset>
+    <legend class="strong">
+
+    </legend>
+    <div class="multiple-choice">
+      <label for="age-1" class="block-label">
+        <input id="age-1" type="radio" name="age" value="15">
+        15 and under
+      </label>
+    </div>
+
+    <div class="multiple-choice">
+      <label for="age-2" class="block-label">
+        <input id="age-2" type="radio" name="age" value="18">
+        16 to 24
+      </label>
+    </div>
+
+    <div class="multiple-choice">
+      <label for="age-3" class="block-label">
+        <input id="age-3" type="radio" name="age" value="32">
+        25 and over
+      </label>
+    </div>
+
+
+  </fieldset>
+
+</div>
+
+  <input type="submit" class="button" value="Continue" formaction="/design_sprint_3b/choices">
+
+</form>
+
+<!-- <div class="info-panel" style="margin-top: 48px;">
+  <strong>Why are we asking this?</strong><br />
+  We may show services aimed at your specific needs.
+</div> -->
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

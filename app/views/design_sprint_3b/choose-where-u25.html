@@ -1,0 +1,67 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+What would you like to do?
+{% endblock %}
+
+
+{% block pageTitle %}
+What would you like to do?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<form class="form" id="pageform" method="get">
+  <div class="form-group">
+    <fieldset>
+      <legend class="strong" style="margin-bottom: 32px;">
+        <p>Choose all that apply.</p>
+      </legend>
+
+      <div class="multiple-choice" data-target="example-progress">
+        <label for="checkbox-1" class="block-label">
+          <input id="checkbox-1" type="checkbox" name="multiChoose" value="choose-pharmacy">
+          Pick up a free self-test kit from a pharmacy
+          <p class="extra-info">Get a free kit to take your own samples and send them by post to be tested. Your results are private. Treatment is free if you need it.</p>
+        </label>
+        <label for="checkbox-2" class="block-label">
+          <input id="checkbox-2" type="checkbox" name="multiChoose" value="choose-online">
+          Order a free self-test kit online
+          <p class="extra-info">Get a free kit sent to you by post. The packaging is discreet. You'll take your own samples and send them back to be tested. Your results are private. Treatment is free if you need it.</p>
+        </label>
+        <label for="checkbox-3" class="block-label">
+          <input id="checkbox-3" type="checkbox" name="multiChoose" value="choose-location">
+          See a sexual health professional
+          <p class="extra-info">Testing is free, and treatment is free if you need it. They won't share your results unless you ask them to.</p>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <input type="submit" class="button" value="Continue" formaction="/design_sprint_3b/need-time">
+
+</form>
+
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

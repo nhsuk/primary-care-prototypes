@@ -1,0 +1,75 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+What times work best for you?
+{% endblock %}
+
+
+{% block pageTitle %}
+What times work best for you?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<p>We'll show you places that are open at the times you choose.</p>
+
+<form class="form" id="pageform" method="get">
+
+<div class="form-group">
+<fieldset>
+  <legend class="strong">
+
+  </legend>
+  <div class="multiple-choice" data-target="example-progress">
+    <label for="checkbox-1" class="block-label">
+      <input id="checkbox-1" type="checkbox" name="time" value="weekdays">
+      Any time Monday to Friday
+    </label>
+    <label for="checkbox-2" class="block-label">
+      <input id="checkbox-2" type="checkbox" name="time" value="weekend">
+      Saturday or Sunday
+    </label>
+    <label for="checkbox-3" class="block-label">
+      <input id="checkbox-3" type="checkbox" name="time" value="aroundworkweekdays">
+      Early morning and late afternoon Monday to Friday
+    </label>
+    <label for="checkbox-4" class="block-label">
+      <input id="checkbox-4" type="checkbox" name="time" value="lunchweekdays">
+      Between midday and 2pm Monday to Friday
+    </label>
+    <label for="checkbox-5" class="block-label">
+      <input id="checkbox-5" type="checkbox" name="time" value="oohweekdays">
+      After 6pm Monday to Friday
+    </label>
+
+  </div>
+</fieldset>
+
+  </div>
+
+<input type="submit" class="button" value="Continue" formaction="/design_sprint_3b/location">
+
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

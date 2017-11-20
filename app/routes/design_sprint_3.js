@@ -108,7 +108,7 @@ router.get('/places-to-go', function (req, res) {
         if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
           if (parseInt(age) >= 25) {
             res.render('design_sprint_3/results-3');
-          } else {
+          } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
             res.render('design_sprint_3/results-9');
           }
         }
@@ -116,26 +116,28 @@ router.get('/places-to-go', function (req, res) {
           if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
             if (parseInt(age) >= 25) {
               res.render('design_sprint_3/results-2');
-            } else {
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_3/results-10');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-location'))) {
             if (parseInt(age) >= 25) {
               res.render('design_sprint_3/results-7');
-            } else {
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_3/results-6');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-pharmacy'))) {
             res.render('design_sprint_3/results-8');
           }
-      } else if (multiChoose.length == 1) {
+      } else {
           if (multiChoose.includes('choose-location')) {
             res.render('design_sprint_3/results-1');
-          } else if (multiChoose.includes('choose-pharmacy')) {
+          }
+          if (multiChoose.includes('choose-pharmacy')) {
             res.render('design_sprint_3/results-5');
-          } else if (multiChoose.includes('choose-online')) {
+          } 
+          if (multiChoose.includes('choose-online')) {
             res.render('design_sprint_3/results-4');
           }
       }

@@ -1,0 +1,52 @@
+{% extends '_layouts/layout_2-3_no_title_block.html' %}
+
+
+{% block page_title %}
+Where do you want the self-test kit delivered to?
+{% endblock %}
+
+
+{% block pageTitle %}
+Where do you want the self-test kit delivered to?
+{% endblock %}
+
+{% block pageIntro %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<p>We'll show you the website where you can order your kit.</p>
+
+<form class="form" id="pageform" method="get">
+  <div class="form-group">
+    <fieldset>
+      <legend class="visually-hidden">
+      </legend>
+      <div class="form-group form-group-compound">
+        <label class="form-label" for="address-line-1" style="font-weight:400;">Enter a postcode.</label>
+        <input class="form-control" type="text" name="location" id="address-line-1">
+      </div>
+    </fieldset>
+  </div>
+
+  <input type="submit" class="button" value="Continue" formaction="/design_sprint_3b/places-to-go" >
+</form>
+
+{% endblock %}
+
+
+{% block emergencyContent %}
+
+
+{% endblock%}
+
+{% block mutedCallout%}
+
+
+{% endblock%}
+
+{% block body_after %}
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends '_layouts/layout_index_in_blue_box.html' %}
+
+
+{% block page_title %}
+Chlamydia - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Chlamydia
+
+{% endblock %}
+
+{% block leftContent %}
+
+<ol>
+  <li><a class="on-blue" href="condition-main">About chlamydia</a></li>
+  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
+  <li><a class="on-blue" href="condition-page-3">People at risk</a></li>
+
+</ol>
+
+{% endblock %}
+
+{% block rightContent %}
+
+<ol start="5">
+  <li><a class="on-blue" href="condition-page-5">Treatment</a></li>
+  <li>Self-care</li>
+  <li><a class="on-blue" href="condition-page-7">Prevention</a></li>
+</ol>
+
+{% endblock %}
+
+{% block content %}
+
+<h2>Things you can do yourself</h2>
+
+<p>To help relieve the symptoms:</p>
+
+<div class="panel">
+  <div class="panel__content panel__content--half">
+    <div class="reading-width">
+      <h3 id="do">Do</h3>
+      <ul class="list--check">
+        <li>example of a good thing</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel__content panel__content--half">
+    <div class="reading-width">
+      <h3 id="dont">Don't</h3>
+      <ul class="list--cross">
+        <li>example of a bad thing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

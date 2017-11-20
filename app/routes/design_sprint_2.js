@@ -100,46 +100,50 @@ router.get('/places-to-go', function (req, res) {
   multiChoose = req.session.multiChoose;
 
   if (hasSymptoms === 'yes') {
-    if ((multiChoose.length == 3) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
-      res.render('design_sprint_2/results-3');
-    }
-    if ((multiChoose.length == 2) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
-      res.render('design_sprint_2/results-2');
-    }
-    if ((multiChoose.length == 2) && (multiChoose.includes('choose-location')) && (multiChoose.includes('choose-online'))) {
-      res.render('design_sprint_2/results-7');
-    }
-    if ((multiChoose.length == 1) && (multiChoose.includes('choose-location'))) {
-      res.render('design_sprint_2/results-1');
+    if (multiChoose.length === 3) {
+      if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
+        res.render('design_sprint_2/results-3');
+      }
+    } else if (multiChoose.length === 2) {
+      if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
+        res.render('design_sprint_2/results-2');
+      }
+      if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-online'))) {
+        res.render('design_sprint_2/results-7');
+      }
+    } else {
+        if (multiChoose.includes('choose-location')) {
+          res.render('design_sprint_2/results-1');
+        }
     }
   } else if (hasSymptoms === 'no') {
-      if (multiChoose.length == 3) {
+      if (multiChoose.length === 3) {
         if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
           if (parseInt(age) >= 25) {
-            res.render('design_sprint_2/results-3'); 
-          } else {
+            res.render('design_sprint_2/results-3');
+          } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
             res.render('design_sprint_2/results-9');
           }
         }
-      } else if (multiChoose.length == 2) {
+      } else if (multiChoose.length === 2) {
           if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
             if (parseInt(age) >= 25) {
-              res.render('design_sprint_2/results-2'); 
-            } else {
+              res.render('design_sprint_2/results-2');
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_2/results-10');
-            } 
+            }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-location'))) {
             if (parseInt(age) >= 25) {
               res.render('design_sprint_2/results-7');
-            } else {
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_2/results-6');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-pharmacy'))) {
-            res.render('design_sprint_2/results-8'); 
+            res.render('design_sprint_2/results-8');
           }
-      } else if (multiChoose.length == 1) {
+      } else {
           if (multiChoose.includes('choose-location')) {
             res.render('design_sprint_2/results-1');
           } else if (multiChoose.includes('choose-pharmacy')) {

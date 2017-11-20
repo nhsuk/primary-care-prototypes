@@ -32,20 +32,20 @@ router.get('/choices', function (req, res) {
   req.session.age = age;
   hasSymptoms = req.session.hasSymptoms;
   if (parseInt(age) < 16) {
-    res.render('design_sprint_3a/under16');
+    res.render('design_sprint_3b/under16');
   } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
     if (hasSymptoms === 'yes') {
       req.session.multiChoose = ['choose-location'];
-      res.render('design_sprint_3a/preferred-times');
+      res.render('design_sprint_3b/preferred-times');
     } else {
-      res.render('design_sprint_3a/choose-where-u25');
+      res.render('design_sprint_3b/choose-where-u25');
     }
   } else {
     if (hasSymptoms === 'yes') {
       req.session.multiChoose = ['choose-location'];
-      res.render('design_sprint_3a/preferred-times');
+      res.render('design_sprint_3b/preferred-times');
     } else {
-      res.render('design_sprint_3a/choose-where');
+      res.render('design_sprint_3b/choose-where');
     }
   }
 });
@@ -83,7 +83,6 @@ router.get('/location', function (req, res) {
   if (multiChoose == 'undefined') {
     multiChoose = req.query.multiChoose;
   }
-  console.log("sadasd" + multiChoose);
   if (((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) && (multiChoose.includes('choose-online'))) {
     res.render('design_sprint_3b/users-location-all3');
   } else if ((multiChoose.includes('choose-location')) || (multiChoose.includes('choose-pharmacy'))) {
@@ -109,7 +108,7 @@ router.get('/places-to-go', function (req, res) {
         if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy')) && (multiChoose.includes('choose-online'))) {
           if (parseInt(age) >= 25) {
             res.render('design_sprint_3b/results-3');
-          } else {
+          } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
             res.render('design_sprint_3b/results-9');
           }
         }
@@ -117,21 +116,21 @@ router.get('/places-to-go', function (req, res) {
           if ((multiChoose.includes('choose-location')) && (multiChoose.includes('choose-pharmacy'))) {
             if (parseInt(age) >= 25) {
               res.render('design_sprint_3b/results-2');
-            } else {
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_3b/results-10');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-location'))) {
             if (parseInt(age) >= 25) {
               res.render('design_sprint_3b/results-7');
-            } else {
+            } else if ((parseInt(age) >= 16) && (parseInt(age) < 25)) {
               res.render('design_sprint_3b/results-6');
             }
           }
           if ((multiChoose.includes('choose-online')) && (multiChoose.includes('choose-pharmacy'))) {
             res.render('design_sprint_3b/results-8');
           }
-      } else if (multiChoose.length == 1) {
+      } else {
           if (multiChoose.includes('choose-location')) {
             res.render('design_sprint_3b/results-1');
           } else if (multiChoose.includes('choose-pharmacy')) {

@@ -14,29 +14,34 @@ Chlamydia
 {% block leftContent %}
 
 <ol>
-  <li><a class="on-blue" href="condition-main">About chlamydia</a></li>
-  <li>Symptoms</li>
+  <li><a class="on-blue" href="condition-main">About</a></li>
   <li><a class="on-blue" href="condition-page-3">People at risk</a></li>
-  <li><a class="on-blue" href="condition-page-4">Causes of chlamydia</a></li>
+  <li>Symptoms</li>
+  <li><a class="on-blue" href="condition-test">Getting tested</a></li>
+  <li><a class="on-blue" href="condition-page-5">Treatment and care</a></li>
 </ol>
 
 {% endblock %}
 
 {% block rightContent %}
 
-<ol start="5">
-  <li><a class="on-blue" href="condition-page-5">Treatment</a></li>
-  <li><a class="on-blue" href="condition-page-6">Self-care</a></li>
-  <li><a class="on-blue" href="condition-page-7">Prevention</a></li>
+<ol start="6">
+  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
+  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
+  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
+  <li><a class="on-blue" href="condition-page-9">If it's not treated</a></li>
+  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
 </ol>
 
 {% endblock %}
 
 {% block content %}
 
-<h2>Symptoms</h2>
+<h2>Symptoms of chlamydia</h2>
 
-<h3 style="margin-top:32px;">Women</h3>
+<p>Most people who have chlamydia don’t notice any symptoms. You could have chlamydia even if you have no symptoms, or your symptoms go away.</>
+
+<h3 style="margin-top:32px;">Females</h3>
 
 <p>The symptoms of chlamydia in women are:</p>
 
@@ -50,9 +55,7 @@ Chlamydia
 <li>pain, swelling and discharge in your eyes (<a href="https://www.nhs.uk/Conditions/Conjunctivitis-infective/Pages/Introduction.aspx">conjunctivitis</a>)</li>
 </ul>
 
-<h3>Men</h3>
-
-<p>The symptoms of chlamydia in men are:</p>
+<h3>Males</h3>
 
 <ul>
 <li>discharge from your penis or bottom</li>
@@ -62,12 +65,11 @@ Chlamydia
 </ul>
 
 <div class="primary-care" style="margin-top: 32px; margin-bottom:32px;">
-  <p style="margin-top: 0;"><b>If you think you have any symptoms you should get a test.</b></p>
-  <p>We can help you find a test that’s right for you.</p>
-<a href="intro" class="button" style="
-                       padding-right: 3rem;
-                       background-repeat: no-repeat;
-                       background-position: 95% 60%;
-                       background-image: url(/images/icon-button-right-chevron.svg);">Find out about chlamydia tests</a>
+  If you think you have any symptoms you should <a href="condition-test">get a chlamydia test</a>.
 </div>
+
+<p>
+  <span><a href="condition-page-3">< 2. People at risk</a></span>
+  <span style="float:right"><a href="condition-test">4. Getting tested ></a></span>
+</p>
 {% endblock %}

@@ -1,0 +1,89 @@
+{% extends '_layouts/layout_index_in_blue_box.html' %}
+
+
+{% block page_title %}
+Chlamydia - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Chlamydia
+
+{% endblock %}
+
+{% block leftContent %}
+
+<ol>
+  <li><a class="on-blue" href="condition-main">About</a></li>
+  <li><a class="on-blue" href="condition-page-3">People at risk</a></li>
+  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
+  <li>Getting tested</li>
+  <li><a class="on-blue" href="condition-page-5">Treatment and care</a></li>
+</ol>
+
+{% endblock %}
+
+{% block rightContent %}
+
+<ol start="6">
+  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
+  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
+  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
+  <li><a class="on-blue" href="condition-page-9">If it's not treated</a></li>
+  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
+</ol>
+
+{% endblock %}
+
+{% block content %}
+
+<h2>Getting tested for chlamydia</h2>
+
+<p>The only way to know if you have chlamydia is to get tested. You can have a test even if you have no symptoms.</p>
+
+<h3>How you'll be tested</h3>
+
+<p>Samples will be taken from the areas that might be infected using one or more of the following methods:</p>
+
+<ul>
+  <li>swab inside the vagina, bottom or mouth using a cotton bud</li>
+  <li>pee into a container</li>
+</ul>
+
+<p>Your samples will be sent to a lab and tested for chlamydia. You'll get your results by phone or text message.</p>
+
+<p>If you see a health professional they'll also ask questions about your sexual activity and symptoms. This will help them decide what samples to take.</p>
+
+<h3>Where you can get tested</h3>
+
+<p>The best ways to get tested for chlamydia are to:<p>
+
+<ul>
+  <li>see a sexual health professional</li>
+  <li>get a self-test kit from a pharmacy</li>
+  <li>order a self-test kit online</li>
+</ul>
+
+<div class="beware">
+<b>We can help you find a test that's right for you.<br />
+  <br />
+We'll ask you a few questions. It will take about 5 minutes. We won't store your data.</b>
+</div>
+
+<form class="form" id="pageform" method="get">
+  <div class="form-group">
+  <input type="submit" class="button" style="
+                       padding-right: 3rem;
+                       background-repeat: no-repeat;
+                       background-position: 95% 60%;
+                       background-image: url(/images/icon-button-right-chevron.svg);"
+         value="Find a test" formaction="check-for-symptoms">
+</div>
+</form>
+
+
+<p>
+  <span><a href="condition-page-2">< 3. Symptoms</a></span>
+  <span style="float:right"><a href="condition-page-5">5. Treatment and care ></a></span>
+</p>
+{% endblock %}

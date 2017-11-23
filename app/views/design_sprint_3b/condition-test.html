@@ -15,11 +15,12 @@ Chlamydia
 
 <ol>
   <li><a class="on-blue" href="condition-main">About</a></li>
-  <li><a class="on-blue" href="condition-page-3">People at risk</a></li>
   <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
-  <li>Getting tested</li>
+  <li><a class="on-blue" href="condition-page-3">Who should get tested</a></li>
+  <li>How to get tested</li>
   <li><a class="on-blue" href="condition-page-5">Treatment and care</a></li>
 </ol>
+
 
 {% endblock %}
 
@@ -37,9 +38,15 @@ Chlamydia
 
 {% block content %}
 
-<h2>Getting tested for chlamydia</h2>
+<h2>How to get tested for chlamydia</h2>
 
-<p>The only way to know if you have chlamydia is to get tested. You can have a test even if you have no symptoms.</p>
+<p>The only way to know if you have chlamydia is to get tested. You can have a test at any time, even if you have no symptoms.</p>
+
+<h3>When to get tested</h3>
+
+<p>If you've had unprotected sex and you're worried about chlamydia, you should wait 2 weeks before you get tested. This is because chlamydia might not show up in a test straight away.</p>
+
+<p>Don't wait if you think you have <a href="condition-page-2">symptoms</a>, or someone you've had sex with tells you they have chlamydia.</p>
 
 <h3>How you'll be tested</h3>
 
@@ -77,13 +84,13 @@ We'll ask you a few questions. It will take about 5 minutes. We won't store your
                        background-repeat: no-repeat;
                        background-position: 95% 60%;
                        background-image: url(/images/icon-button-right-chevron.svg);"
-         value="Find a test" formaction="check-for-symptoms">
+         value="Find a chlamydia test" formaction="check-for-symptoms">
 </div>
 </form>
 
 
 <p>
-  <span><a href="condition-page-2">< 3. Symptoms</a></span>
+  <span><a href="condition-page-3">< 3. Who should get tested</a></span>
   <span style="float:right"><a href="condition-page-5">5. Treatment and care ></a></span>
 </p>
 {% endblock %}

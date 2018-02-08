@@ -1,4 +1,4 @@
-{% extends 'design_sprint_5/layout_index_in_blue_box_2.html' %}
+{% extends './layout_index_in_blue_box_2.html' %}
 
 
 {% block page_title %}
@@ -18,10 +18,10 @@ About
 
 <ol>
   <li>About</li>
-  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
-  <li><a class="on-blue" href="condition-page-3">Who should get tested</a></li>
-  <li><a class="on-blue" href="condition-test">How to get tested</a></li>
-  <li><a class="on-blue" href="condition-page-5">Treatment and care</a></li>
+  <li><a href="condition-page-2">Symptoms</a></li>
+  <li><a href="condition-page-3">Who should get tested</a></li>
+  <li><a href="condition-test">How to get tested</a></li>
+  <li><a href="condition-page-5">Treatment and care</a></li>
 </ol>
 
 {% endblock %}
@@ -29,11 +29,11 @@ About
 {% block rightContent %}
 
 <ol start="6">
-  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
-  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
-  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
-  <li><a class="on-blue" href="condition-page-9">If it's not treated</a></li>
-  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li><a href="condition-page-7">Protect yourself</a></li>
+  <li><a href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-9">If it's not treated</a></li>
+  <li class="test"><a href="https://primary-care-data-prototype.herokuapp.com/1-intro" class="muted">Find a chlamydia test</a></li>
 </ol>
 
 {% endblock %}
@@ -55,10 +55,15 @@ About
 <p>If you don't treat it, chlamydia can lead to serious health problems such as pelvic inflammatory disease, lower fertility or infertility. </p>
 
 <div class="bottom-continue-reading">
-    <h4>Continue reading</h4>
-    <p style="margin:0">
-      <a href="condition-page-2">2. Symptoms ></a>
-    </p>
+    
+    <ul class="article-pagination">
+        <li class="article-pagination__item--left">
+          <a href="condition-page-2">
+                <span class="article-pagination__prefix">Next →</span>
+                <span class="article-pagination__title">2. Symptoms</span>
+          </a>
+        </li>        
+    </ul>
 </div>
 
 {% endblock %}

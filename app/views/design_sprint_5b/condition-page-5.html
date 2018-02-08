@@ -1,5 +1,4 @@
-{% extends 'design_sprint_5/layout_index_in_blue_box_2.html' %}
-
+{% extends './layout_index_in_blue_box_2.html' %}
 
 {% block page_title %}
 Chlamydia - NHS.UK
@@ -17,10 +16,10 @@ Treatment and care
 {% block leftContent %}
 
 <ol>
-  <li><a class="on-blue" href="condition-main">About</li>
-  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
-  <li><a class="on-blue" href="condition-page-3">Who should get tested</a></li>
-  <li><a class="on-blue" href="condition-test">How to get tested</a></li>
+  <li><a href="condition-main">About</li>
+  <li><a href="condition-page-2">Symptoms</a></li>
+  <li><a href="condition-page-3">Who should get tested</a></li>
+  <li><a href="condition-test">How to get tested</a></li>
   <li>Treatment and care</li>
 </ol>
 
@@ -29,11 +28,11 @@ Treatment and care
 {% block rightContent %}
 
 <ol start="6">
-  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
-  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
-  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
-  <li><a class="on-blue" href="condition-page-9">If it's not treated</a></li>
-  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li><a href="condition-page-7">Protect yourself</a></li>
+  <li><a href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-9">If it's not treated</a></li>
+  <li class="test"><a href="https://primary-care-data-prototype.herokuapp.com/1-intro" class="muted">Find a chlamydia test</a></li>
 </ol>
 
 {% endblock %}
@@ -62,11 +61,21 @@ Treatment and care
 <p>After you've finished the antibiotics, you should get tested again to check that the chlamydia infection is gone.</p>
 
 <div class="bottom-continue-reading">
-    <h4>Continue reading</h4>
-    <p>
-      <span><a href="condition-test">< 4. How to get tested</a></span>
-      <span style="float:right"><a href="condition-page-8">6. Telling your partner ></a></span>
-    </p>
+    
+    <ul class="article-pagination">
+        <li class="article-pagination__item--right">
+          <a href="condition-page-8">
+                <span class="article-pagination__prefix">Next →</span>
+                <span class="article-pagination__title">6. Telling your partner</span>
+          </a>
+        </li>
+        <li class="article-pagination__item--left">
+            <a href="condition-test">
+                <span class="article-pagination__prefix">← Previous</span>
+                <span class="article-pagination__title">4. How to get tested</span>
+            </a>
+        </li>
+    </ul>
 </div>
 
 {% endblock %}

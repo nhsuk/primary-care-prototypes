@@ -1,0 +1,72 @@
+{% extends './layout_index_in_blue_box_2.html' %}
+
+{% block page_title %}
+Chlamydia - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Chlamydia
+{% endblock %}
+
+{% block pageSubTitle %}
+Protect yourself
+{% endblock %}
+
+{% block leftContent %}
+
+<ol>
+  <li><a href="condition-main">About</li>
+  <li><a href="condition-page-2">Symptoms</a></li>
+  <li><a href="condition-page-3">Who should get tested</a></li>
+  <li><a href="condition-test">How to get tested</a></li>
+  <li><a href="condition-page-5">Treatment and care</a></li>
+</ol>
+
+{% endblock %}
+
+{% block rightContent %}
+
+<ol start="6">
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li>Protect yourself</li>
+  <li><a href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-9">If it's not treated</a></li>
+  <li class="test"><a href="https://primary-care-data-prototype.herokuapp.com/1-intro" class="muted">Find a chlamydia test</a></li>
+</ol>
+
+{% endblock %}
+
+{% block content %}
+
+<h2>Protect yourself from chlamydia</h2>
+
+<p>To protect yourself from getting or passing on chlamydia, you should:</p>
+
+<ul>
+  <li>use a male or female condom every time you have vaginal or anal sex</li>
+  <li>cover the penis with a condom, or the vagina or bottom with a dental dam (latex or soft plastic square) when you have oral sex</li>
+  <li>use a dental dam if you are a female and you rub your vagina against a female partner's vagina</li>
+  <li>avoid sharing sex toys - if you do share them, you should wash them or cover them with a new condom before anyone else uses them</li>
+</ul>
+
+<div class="bottom-continue-reading">
+    
+    <ul class="article-pagination">
+        <li class="article-pagination__item--right">
+          <a href="condition-page-4">
+                <span class="article-pagination__prefix">Next →</span>
+                <span class="article-pagination__title">8. Causes</span>
+          </a>
+        </li>
+        <li class="article-pagination__item--left">
+            <a href="condition-page-8">
+                <span class="article-pagination__prefix">← Previous</span>
+                <span class="article-pagination__title">6. Telling your partner</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+{% endblock %}

@@ -1,5 +1,4 @@
-{% extends 'design_sprint_5/layout_index_in_blue_box_2.html' %}
-
+{% extends './layout_index_in_blue_box_2.html' %}
 
 {% block page_title %}
 Chlamydia - NHS.UK
@@ -17,11 +16,11 @@ If it's not treated
 {% block leftContent %}
 
 <ol>
-  <li><a class="on-blue" href="condition-main">About</li>
-  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
-  <li><a class="on-blue" href="condition-page-3">Who should get tested</a></li>
-  <li><a class="on-blue" href="condition-test">How to get tested</a></li>
-  <li><a class="on-blue" href="condition-page-5">Treatment and care</a></li>
+  <li><a href="condition-main">About</li>
+  <li><a href="condition-page-2">Symptoms</a></li>
+  <li><a href="condition-page-3">Who should get tested</a></li>
+  <li><a href="condition-test">How to get tested</a></li>
+  <li><a href="condition-page-5">Treatment and care</a></li>
 </ol>
 
 {% endblock %}
@@ -29,11 +28,11 @@ If it's not treated
 {% block rightContent %}
 
 <ol start="6">
-  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
-  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
-  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li><a href="condition-page-7">Protect yourself</a></li>
+  <li><a href="condition-page-4">Causes</a></li>
   <li>If it's not treated</li>
-  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
+  <li class="test"><a href="https://primary-care-data-prototype.herokuapp.com/1-intro" class="muted">Find a chlamydia test</a></li>
 </ol>
 
 {% endblock %}
@@ -63,10 +62,15 @@ If it's not treated
 </ul>
 
 <div class="bottom-continue-reading">
-    <h4>Continue reading</h4>
-    <p>
-      <span><a href="condition-page-4">< 8. Treatment and care</a></span>
-    </p>
+    
+    <ul class="article-pagination">
+        <li class="article-pagination__item--left">
+            <a href="condition-page-4">
+                <span class="article-pagination__prefix">← Previous</span>
+                <span class="article-pagination__title">8. Treatment and care</span>
+            </a>
+        </li>
+    </ul>
 </div>
 
 {% endblock %}

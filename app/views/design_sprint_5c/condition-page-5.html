@@ -1,5 +1,4 @@
-{% extends 'design_sprint_5/layout_index_in_blue_box_2.html' %}
-
+{% extends './layout_index.html' %}
 
 {% block page_title %}
 Chlamydia - NHS.UK
@@ -14,28 +13,18 @@ Chlamydia
 Treatment and care
 {% endblock %}
 
-{% block leftContent %}
-
+{% block navContent %}
 <ol>
-  <li><a class="on-blue" href="condition-main">About</li>
-  <li><a class="on-blue" href="condition-page-2">Symptoms</a></li>
-  <li><a class="on-blue" href="condition-page-3">Who should get tested</a></li>
-  <li><a class="on-blue" href="condition-test">How to get tested</a></li>
-  <li>Treatment and care</li>
+  <li><a href="condition-main">About</a></li>
+  <li><a href="condition-page-2">Symptoms</a></li>
+  <li><a href="condition-page-3">Who should get tested</a></li>
+  <!--<li><a href="condition-test">How to get tested</a></li>-->
+  <li><strong>Treatment and care</strong></li>
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li><a href="condition-page-7">Protect yourself</a></li>
+  <li><a href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-9">If it's not treated</a></li>
 </ol>
-
-{% endblock %}
-
-{% block rightContent %}
-
-<ol start="6">
-  <li><a class="on-blue" href="condition-page-8">Telling your partner</a></li>
-  <li><a class="on-blue" href="condition-page-7">Protect yourself</a></li>
-  <li><a class="on-blue" href="condition-page-4">Causes</a></li>
-  <li><a class="on-blue" href="condition-page-9">If it's not treated</a></li>
-  <!--<li><a class="on-blue" href="condition-page-6">Self-care</a></li>-->
-</ol>
-
 {% endblock %}
 
 {% block content %}
@@ -60,13 +49,5 @@ Treatment and care
 <h3>When to get tested again</h3>
 
 <p>After you've finished the antibiotics, you should get tested again to check that the chlamydia infection is gone.</p>
-
-<div class="bottom-continue-reading">
-    <h4>Continue reading</h4>
-    <p>
-      <span><a href="condition-test">< 4. How to get tested</a></span>
-      <span style="float:right"><a href="condition-page-8">6. Telling your partner ></a></span>
-    </p>
-</div>
 
 {% endblock %}

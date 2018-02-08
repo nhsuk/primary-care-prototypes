@@ -12,14 +12,14 @@ var naturalSort = require('javascript-natural-sort')
 // Start page ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 router.get('/start', function (req, res) {
   req.session.destroy();
-  res.render('v4/start', {
+  res.render('v5/start', {
     suppressServiceName: true
   });
 });
 
 // Name ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 router.get('/example', function (req, res) {
-  res.render('v4/example', {
+  res.render('v5/example', {
     session: req.session
   });
 });
@@ -28,7 +28,7 @@ router.get('/google-search', function (req, res) {
 
   var searchTerm = req.query.searchTerm;
 
-  res.render('v4/google-search', {
+  res.render('v5/google-search', {
     searchTerm: searchTerm
     });
 
@@ -41,7 +41,7 @@ router.get('/google-results', function (req, res) {
   var searchTerm = req.query.searchTerm;
 //  process.stdout.write("HAI THERE");
 
-  res.render('v4/google-results', {
+  res.render('v5/google-results', {
     searchTerm: searchTerm
     });
 
@@ -58,7 +58,7 @@ router.get('/find-a-service', function (req, res) {
 
 //  process.stdout.write("HAI THERE");
 
-  res.render('v4/find-a-service', {
+  res.render('v5/find-a-service', {
     condition: condition,
     servicePharmacy: servicePharmacy,
     serviceGP: serviceGP
@@ -76,12 +76,12 @@ router.get('/check-location', function (req, res) {
 
   if (req.query.postcode === '') {
 
-    res.render('v4/find-a-service', {
+    res.render('v5/find-a-service', {
       condition: condition,
       error: "NEED POSTCODE ERROR"
     });
   } else {
-    res.render('v4/show-list-of-services');
+    res.render('v5/show-list-of-services');
   }
 
 });
@@ -110,7 +110,7 @@ router.get('/show-list-of-services', function (req, res) {
 
   if (serviceGP == 'true') {
 
-    var GPData = require('../views/v4/data_files/data_gp_LS.json');
+    var GPData = require('../views/v5/data_files/data_gp_LS.json');
 
 //    console.log("--------------GP info --------");
 //      for (var i = 0; i < GPData.length; ++i) {
@@ -145,7 +145,7 @@ router.get('/show-list-of-services', function (req, res) {
 
   if (servicePharmacy == 'true') {
 
-    var pharmaciesData = require('../views/v4/data_files/data_pharmacies_LS.json');
+    var pharmaciesData = require('../views/v5/data_files/data_pharmacies_LS.json');
 
 //    console.log("--------------Pharmacies info --------");
 //      for (var i = 0; i < pharmaciesData.length; ++i) {
@@ -181,7 +181,7 @@ router.get('/show-list-of-services', function (req, res) {
 
     if (serviceSexualHealthClinic == 'true') {
 
-      var sexualhealthclinicData = require('../views/v4/data_files/data_sexualhealthclinic_LS.json');
+      var sexualhealthclinicData = require('../views/v5/data_files/data_sexualhealthclinic_LS.json');
 
   //    console.log("--------------Pharmacies info --------");
   //      for (var i = 0; i < pharmaciesData.length; ++i) {
@@ -215,7 +215,7 @@ router.get('/show-list-of-services', function (req, res) {
       }
 
 
-  res.render('v4/show-list-of-services', {
+  res.render('v5/show-list-of-services', {
     time: time,
     comment: comment,
     //parsedGPdata: parsedGPdata,
@@ -261,7 +261,7 @@ router.get('/book-an-appointment-online', function (req, res) {
 
 //  process.stdout.write("HAI THERE");
 
-  res.render('v4/book-an-appointment-online', {
+  res.render('v5/book-an-appointment-online', {
     GPsurgeryName: GPsurgeryName
     });
 

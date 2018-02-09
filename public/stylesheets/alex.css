@@ -2,6 +2,9 @@
 	clear:both;
 }
 
+.header-panel h1.h2 {
+	padding-top:0;
+}
 
 
 /*########### Chlamydia v5 ###########*/
@@ -142,6 +145,15 @@
 	display:none;
 }*/
 
+.header-panel.white .subheader {
+	margin-bottom:0;
+}
+
+.header-panel.white .content-seperator {
+	margin-top:32px;
+	margin-bottom:32px;
+}
+
 .main-content {
 	position:relative;
 }
@@ -153,9 +165,23 @@
 	}
 	
 		.main-content-nav li {
-			margin-bottom:5px;
-			font-size:18px;
+			margin-bottom:10px;
+			font-size:20px;
 		}
+		
+			.main-content-nav ol li ul {
+				padding:0 0 10px 25px;
+				margin:0;
+				display:block;
+			}
+			
+				.main-content-nav ol li ul li {
+					padding:0;
+					margin:10px 0 0 0;
+					line-height:24px;
+					font-size:18px;
+					color:#768692;
+				}	
 	
 	.main-content-right {
 		float:right;
@@ -169,6 +195,10 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.bottom-continue-reading .grid-2-3 {
+	float:right;
 }
 
 @media only screen and (max-width: 640px) {

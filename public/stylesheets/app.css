@@ -1,3 +1,4 @@
+@import url("//fast.fonts.net/cssapi/4c65968f-c33e-4eb6-9a5d-ab4f81a0543f.css");
 .grid-row, .service-alert-inner, .notification-banner-inner, .breadcrumb, .footer-container, .-date, .error-summary, form, .form-group, #global-header, .signage {
   zoom: 1; }
   .grid-row:after, .service-alert-inner:after, .notification-banner-inner:after, .breadcrumb:after, .footer-container:after, .-date:after, .error-summary:after, form:after, .form-group:after, #global-header:after, .signage:after {
@@ -30,7 +31,7 @@ we can add other blues, named like blue40 (for a lighter blue) or blue60 for a d
 16px
 */
 body, pre.user-input {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Neue Frutiger W01", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px; }

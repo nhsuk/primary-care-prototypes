@@ -1,9 +1,6 @@
-/*body {
-	background:#f0f4f5;
-}*/
-
 #global-footer {
-	background:#d8dde0;
+	margin-top:32px;
+	background:#0072c6;
 	border-top:none;
 }
 
@@ -243,37 +240,6 @@
 .bottom-continue-reading .grid-2-3 {
 	float:right;
 }
-
-.bottom-continue-reading-new {
-	margin-top:32px;
-	background:#fff;
-}
-
-	.bottom-continue-reading-new h3 {
-		padding:15px 20px;
-		position:relative;
-		display:block;
-		background:#333;
-		color:#fff;
-	}
-	
-		.bottom-continue-reading-new h3:after {
-			content:"";
-			width:0;
-			height:0;
-			display:block;
-			border-left: 15px solid transparent;
-			border-right: 15px solid transparent;
-			border-top:15px solid #333;
-			position:absolute;
-			bottom:-15px;
-			left:20px;
-		}
-		
-	.bottom-continue-reading-new p {
-		margin-left:20px;
-		margin-right:20px;
-	}
 	
 	.green-button {
 		margin:0;
@@ -285,18 +251,6 @@
 
 @media only screen and (max-width: 640px) {
 	
-/*	.proto-5c .header-panel.white h1 {
-		margin-bottom:0;
-	}
-	
-	.proto-5c .header-panel h2 {
-		display:block;
-	}*/
-	
-	.green-button {
-		width:90%;
-	}
-	
 	.main-content-nav {
 		position:relative;
 	}
@@ -306,6 +260,78 @@
 	}
 	
 	.back-top {
-		display:inline;
+		margin:0;
+		display:inline-block;
 	}
+}
+
+
+
+
+/*########### Chlamydia v6 ###########*/
+
+.proto-6 {
+	background:#e8edee;
+}
+
+	.remote-care {
+		padding-bottom:32px;
+		margin:32px 0;
+		background:#fff;
+		box-sizing:border-box;
+	}
+	
+		.remote-care * {
+			box-sizing:border-box;
+		}
+	
+		.remote-care h3 {
+			padding:10px 20px;
+			display:block;
+			background:#333;
+			color:#fff;
+			position:relative;
+		}
+		
+			.remote-care h3:after {
+				content:"";
+				position:absolute;
+				bottom:-15px;
+				left:20px;
+				width: 0px;
+				height: 0px;
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 15px solid #333;
+			}
+			
+		.remote-care p {
+			margin-left:20px;
+			margin-right:20px;
+		}
+		
+		.remote-care .green-button {
+			padding:0 50px 0 20px;
+			margin:0 20px;
+			text-align:left;
+			background-position: 94% 65%;
+		}
+		
+@media only screen and (max-width: 540px) {	
+	
+		.remote-care .green-button {
+			width:90%;
+			margin:0 auto;
+			display:block;
+			font-size:16px;
+		}
+		
+}
+
+@media only screen and (max-width: 330px) {	
+	
+		.remote-care .green-button {
+			padding:0 40px 0 10px;
+		}
+		
 }

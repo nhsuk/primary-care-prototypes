@@ -1,0 +1,72 @@
+{% extends './layout_index.html' %}
+
+{% block page_title %}
+Chlamydia - NHS.UK
+{% endblock %}
+
+
+{% block pageTitle %}
+Chlamydia
+{% endblock %}
+
+{% block pageSubTitle %}
+Symptoms
+{% endblock %}
+
+{% block navContent %}
+<ol>
+  <li><a href="condition-main">About</a></li>
+  <li><strong>Symptoms</strong>
+  	<ul>
+    	<li><a href="#females">Females</a></li>
+        <li><a href="#males">Males</a></li>
+    </ul>
+  </li>
+  <li><a href="condition-page-3">Check symptoms and who should get tested</a></li>
+  <li><a href="condition-page-5">Treatment</a></li>
+  <li><a href="condition-page-8">Telling your partner</a></li>
+  <li><a href="condition-page-7">Protect yourself</a></li>
+  <li><a href="condition-page-4">Causes</a></li>
+  <li><a href="condition-page-9">If it's not treated</a></li>
+</ol>
+{% endblock %}
+
+{% block content %}
+
+<h2>Symptoms of chlamydia</h2>
+
+<p>Most people who have chlamydia don’t notice any symptoms. You could have chlamydia even if you have no symptoms, or your symptoms go away.</>
+
+<h3 style="margin-top:32px;" id="females">Females</h3>
+
+<p>Females might notice one or more of the following symptoms:</p>
+
+<ul>
+<li>bleeding between periods (even if you use contraception)</li>
+<li>vaginal discharge that's not usual for you</li>
+<li>bleeding after or during sex</li>
+<li>pain when you pee or have sex</li>
+<li>pelvic pain </li>
+<li>discharge from your bottom</li>
+<li>pain, swelling and discharge in your eyes (<a href="https://www.nhs.uk/Conditions/Conjunctivitis-infective/Pages/Introduction.aspx">conjunctivitis</a>)</li>
+</ul>
+
+<h3 id="males">Males</h3>
+
+<p>Males might notice one or more of the following symptoms:</p>
+
+<ul>
+<li>discharge from your penis or bottom</li>
+<li>pain when you pee</li>
+<li>pain in your testicles</li>
+<li>pain, swelling and discharge in your eyes (<a href="https://www.nhs.uk/Conditions/Conjunctivitis-infective/Pages/Introduction.aspx">conjunctivitis</a>)</li>
+</ul>
+
+<div class="primary-care" style="margin-top: 32px; margin-bottom:32px;">
+  If you or a sexual partner have any of these symptoms you should both <a href="https://primary-care-data-prototype.herokuapp.com/1-intro">get tested for chlamydia</a>.
+  <br /><br />
+  If you don't have any symptoms, you could still be at risk. <a href="condition-page-3">Check if you should get tested for chlamydia</a>.
+
+</div>
+
+{% endblock %}

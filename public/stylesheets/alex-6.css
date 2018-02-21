@@ -274,14 +274,6 @@
 	background:#e8edee;
 }
 
-	.proto-6 #menu ul {
-		list-style-image: url('/images/external.png');
-	}
-	
-	.proto-6 #menu ol {
-		margin-bottom:0;
-	}
-
 	.remote-care {
 		padding-bottom:32px;
 		margin:32px 0;
@@ -316,22 +308,7 @@
 		.remote-care p {
 			margin-left:20px;
 			margin-right:20px;
-			margin-bottom:0;
 		}
-		
-		.remote-care ul {
-			padding-left:30px;
-			list-style:none;
-		}
-		
-			.remote-care ul li {
-				line-height:20px;
-			}
-			
-			.remote-care ul li:before {
-			  content: '✓';
-			  padding:0 10px 0 0;
-			}
 		
 		.remote-care .green-button {
 			padding:0 50px 0 20px;

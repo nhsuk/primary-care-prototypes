@@ -6,11 +6,11 @@
 
     <title>{% block page_title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
-     <link rel="stylesheet" type="text/css" href="/stylesheets/alex-5c.css">
+     <link rel="stylesheet" type="text/css" href="/stylesheets/alex-6b.css">
     {% block html_head %}{% endblock %}
   </head>
 
-  <body class="{% block body_css_classes %}{% endblock %} proto-5c">
+  <body class="{% block body_css_classes %}{% endblock %}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     {% include '_includes/service-alert.html' %}
@@ -22,7 +22,7 @@
 
     <main id="content" role="main" class="content">
 
-        <div class="header-panel white">
+        <div class="header-panel">
           <div class="grid-row">
             <div class="grid-3-3">
               <h1 class="h2 header">
@@ -45,11 +45,20 @@
         
             <div class="grid-2-3 main-content-right" id="page-content">
             	{% block content %}{% endblock %}
-                <p class="back-top"><a href="#menu">Back to menu</a> ↑</p>
-                <div class="bottom-continue-reading">
-                	<p>We can help you find a chlamydia test that's right for you:</p>
+                <div class="remote-care">
+                	<h3>Find a test near you</h3>
+                    <p>Answer some quick questions to find your nearest:</p>
+                    <ul>
+                        <li>Sexual health professional</li>
+                        <li>Drop in centre</li>
+                        <li>Places to collect a test</li>
+                        <li>Online test kit provider</li>
+                    </ul>
+                	<!--<p>We can help you find a chlamydia test that's right for you:</p>-->
                     <a href="https://primary-care-data-prototype.herokuapp.com/1-intro" class="button green-button">Find a chlamydia test</a>
                 </div>
+                <div class="clear"></div>
+                <p class="back-top"><a href="#menu">Back to menu</a> ↑</p>
             </div>
             
 		</div>

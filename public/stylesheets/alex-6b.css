@@ -1,3 +1,7 @@
+body {
+	background:#e8edee;
+}
+
 #global-footer {
 	margin-top:32px;
 	background:#0072c6;
@@ -8,26 +12,6 @@
 	clear:both;
 }
 
-.header-panel h1.h2 {
-	padding-top:0;
-}
-
-
-/*########### Chlamydia v5 ###########*/
-
-.header-panel .header {
-	margin-bottom:0;
-}
-
-.header-panel .subheader {
-	padding-top:0;
-	margin-top:0;
-	margin-bottom:32px;
-	font-weight:300;
-	font-size:24px;
-	line-height:32px;
-}
-
 .muted {
     padding: 10px 20px;
 	margin-bottom:0;
@@ -36,65 +20,42 @@
 	display:inline-block;
 }
 
-.bottom-continue-reading {
-	padding-top:32px;
-	margin-top:32px;
-	border-top:#d8dde0 4px solid;
-	position:relative;
-}
-
-	.bottom-continue-reading:after {
-		content:"";
-		width:0;
-		height:0;
-		display:block;
-		border-left: 15px solid transparent;
-		border-right: 15px solid transparent;
-		border-top:15px solid #d8dde0;
-		position:absolute;
-		top:0;
-		left:0;
-	}
-		
-
-	.bottom-continue-reading h3 {
-		padding:0;
-		margin:0 0 20px 0;
-	}
-	
-	.bottom-continue-reading p {
-		margin-top:0;
-	}
-
-.bottom-test {
-}
-
-	.bottom-test h4 {
-		padding:0;
-		margin:32px 0 20px 0;
-	}
-	
-
-
-
-
-/*########### Chlamydia v5b ###########*/
-
-.header-panel.white {
+.header-panel {
 	padding:0;
 	margin-bottom:0;
 	background:none;
 }
 
-	.header-panel.white h1,
-	.header-panel.white h2,
-	.header-panel.white li {
+	.header-panel h1.h2 {
+		padding-top:0;
+	}
+	
+	.header-panel .header {
+		margin-bottom:0;
+	}
+	
+	.header-panel .subheader {
+		padding-top:0;
+		margin-top:0;
+		margin-bottom:32px;
+		font-weight:300;
+		font-size:24px;
+		line-height:32px;
+	}
+
+	.header-panel h1,
+	.header-panel h2,
+	.header-pane li {
 		color:#231f20;
 	}
 	
-	.header-panel ol li.test {
-		list-style:none;
-		margin-left:-20px;
+	.header-panel .subheader {
+		margin-bottom:0;
+	}
+	
+	.header-panel .content-seperator {
+		margin-top:32px;
+		margin-bottom:32px;
 	}
 	
 .column--one-third {
@@ -111,73 +72,6 @@
 		.column--one-third ol {
 			margin-bottom:0;
 		}
-}
-
-.article-pagination {
-	padding:0;
-	margin:0;
-	list-style:none;
-}
-
-.article-pagination:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-	.article-pagination li a {
-		display:block;
-		text-decoration:none;
-	}
-
-	.article-pagination__item--right,
-	.article-pagination__item--left {
-		padding:0;
-		margin:0;
-	}
-
-	.article-pagination__item--right {
-		float:right;
-		text-align:right;
-	}
-	
-	.article-pagination__item--left {
-		float:left;
-		text-align:left;
-	}
-	
-		.article-pagination__prefix {
-			color:#231f20;
-			display:block;
-		}
-	
-		.article-pagination__title {
-			display:block;
-			font-size:16px;
-			color:#0072c6;
-			text-decoration:underline;
-		}
-
-
-
-
-/*########### Chlamydia v5c ###########*/
-
-/*.proto-5c .header-panel.white h1 {
-		margin-bottom:32px;
-}
-
-.proto-5c .header-panel h2 {
-	display:none;
-}*/
-
-.header-panel.white .subheader {
-	margin-bottom:0;
-}
-
-.header-panel.white .content-seperator {
-	margin-top:32px;
-	margin-bottom:32px;
 }
 
 .main-content {
@@ -230,25 +124,7 @@
 		.back-top {
 			display:none;
 		}
-
-#content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.bottom-continue-reading .grid-2-3 {
-	float:right;
-}
-	
-	.green-button {
-		margin:0;
-		padding-right: 3rem;
-		background-repeat: no-repeat;
-		background-position: 95% 60%;
-		background-image: url(/images/icon-button-right-chevron.svg);
-	}
-
+		
 @media only screen and (max-width: 640px) {
 	
 	.main-content-nav {
@@ -265,21 +141,22 @@
 	}
 }
 
-
-
-
-/*########### Chlamydia v6 ###########*/
-
-.proto-6 {
-	background:#e8edee;
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-	.proto-6 #menu ul {
+	#menu ul {
 		list-style-image: url('/images/external.png');
 	}
 	
-	.proto-6 #menu ol {
+	#menu ol {
 		margin-bottom:0;
+	}
+	
+	#menu li a {
+		display:block;
 	}
 
 	.remote-care {
@@ -337,6 +214,8 @@
 			padding:0 50px 0 20px;
 			margin:0 20px;
 			text-align:left;
+			background-image: url(/images/icon-button-right-chevron.svg);
+			background-repeat: no-repeat;
 			background-position: 94% 65%;
 		}
 		

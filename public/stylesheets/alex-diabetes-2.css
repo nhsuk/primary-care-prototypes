@@ -1,7 +1,3 @@
-* {
-	font-family:"Frutiger W01";
-}
-
 body {
 	background:#e8edee;
 }
@@ -106,27 +102,48 @@ body {
 		.main-content-nav li {
 			margin-bottom:10px;
 		}
-		
-			.main-content-nav ol li ul {
-				padding:0 0 10px 25px;
-				margin:0;
-				display:none; /* Hide for testing on 15th Feb */
+			
+			.main-content-nav .main-content-nav-arrow {
+				width: 0; 
+				height: 0; 
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #0072c6;;
+				display:inline-block;
 			}
 			
-				.main-content-nav ol li ul li {
+			.rotated {
+			  transform: rotate(-180deg);
+			  -ms-transform: rotate(-180deg); /* IE 9 */
+			  -moz-transform: rotate(-180deg); /* Firefox */
+			  -webkit-transform: rotate(-180deg); /* Safari and Chrome */
+			  -o-transform: rotate(-180deg); /* Opera */
+			}
+		
+			.main-content-nav ul li ul {
+				padding:0 0 10px 25px;
+				margin:0;
+				display:block;
+			}
+			
+				.main-content-nav ul li ul li {
 					padding:0;
 					margin:10px 0 0 0;
-					line-height:24px;
+					line-height:26px;
 					font-size:18px;
 					color:#768692;
-				}	
+				}
+					
+			.main-content-nav a {
+				display:block;
+			}
 	
 	.main-content-right {
 		float:right;
 	}
 	
 		.back-top {
-			display:none;
+			display:inline-block;
 		}
 		
 @media only screen and (max-width: 640px) {
@@ -139,10 +156,6 @@ body {
 		float:none;
 	}
 	
-	.back-top {
-		margin:0;
-		display:inline-block;
-	}
 }
 
 #content:after {
@@ -151,21 +164,9 @@ body {
   clear: both;
 }
 
-	#menu ul {
-		list-style-image: url('/images/external.png');
-	}
-	
-	#menu ol {
-		margin-bottom:0;
-	}
-	
-	#menu li a {
-		display:block;
-	}
-
 	.remote-care {
 		padding-bottom:32px;
-		margin:62px 0 32px 0;
+		margin:32px 0;
 		background:#fff;
 		box-sizing:border-box;
 	}
@@ -195,7 +196,9 @@ body {
 			}
 			
 		.remote-care p {
-			margin:32px 20px 0 20px;
+			margin-left:20px;
+			margin-right:20px;
+			margin-bottom:0;
 		}
 		
 		.remote-care ul {
@@ -211,7 +214,7 @@ body {
 		
 		.remote-care .green-button {
 			padding:0 50px 0 20px;
-			margin:20px 20px 0 20px;
+			margin:0 20px;
 			text-align:left;
 			background-image: url(/images/icon-button-right-chevron.svg);
 			background-repeat: no-repeat;
@@ -222,7 +225,7 @@ body {
 	
 		.remote-care .green-button {
 			width:90%;
-			margin:32px auto 0 auto;
+			margin:0 auto;
 			display:block;
 			font-size:16px;
 		}

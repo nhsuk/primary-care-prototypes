@@ -150,12 +150,9 @@ body {
   display: table;
   clear: both;
 }
-
-	#menu ul {
-		list-style-image: url('/images/external.png');
-	}
 	
-	#menu ol {
+	#menu ol,
+	#menu ul {
 		margin-bottom:0;
 	}
 	

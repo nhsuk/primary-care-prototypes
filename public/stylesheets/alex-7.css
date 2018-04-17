@@ -6,9 +6,19 @@ body {
 	background:#e8edee;
 }
 
+a,
+a:link {
+	color: #0058ad;
+}
+
+#global-header{
+	background-color: #0058ad;
+	border:none;
+}
+
 #global-footer {
 	margin-top:32px;
-	background:#0072c6;
+	background:#0058ad;
 	border-top:none;
 }
 
